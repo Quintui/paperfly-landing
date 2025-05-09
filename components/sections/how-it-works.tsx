@@ -32,16 +32,42 @@ const Step = ({
 
   return (
     <div
-      className={`flex flex-col md:flex-row items-center ${
+      className={`flex flex-col md:flex-row justify-center items-center ${
         isReversed ? "md:flex-row-reverse" : ""
       }`}
     >
+      {/* Mobile version has a cleaner layout with icon at top */}
+      <div className="relative z-10 mb-6 md:mb-0 md:hidden flex justify-center w-full">
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
+          viewport={{ once: true }}
+          className="w-20 h-20 bg-[#005DF2] rounded-full flex items-center justify-center text-white relative z-20"
+        >
+          {icon}
+        </motion.div>
+      </div>
+
+      {/* Mobile version title and description */}
       <motion.div
         variants={stepVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className={`md:w-5/12 mb-8 md:mb-0 ${
+        className="text-center md:text-left mb-6 md:hidden w-full"
+      >
+        <h3 className="text-2xl font-bold mb-3 text-[#005DF2]">{title}</h3>
+        <p className="text-gray-700 px-4">{description}</p>
+      </motion.div>
+
+      {/* Desktop version left column */}
+      <motion.div
+        variants={stepVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        className={`hidden md:block md:w-5/12 mb-8 md:mb-0 ${
           isReversed ? "md:pl-12" : "md:pr-12 md:text-right"
         }`}
       >
@@ -49,7 +75,8 @@ const Step = ({
         <p className="text-gray-700">{description}</p>
       </motion.div>
 
-      <div className="relative z-10 mb-8 md:mb-0">
+      {/* Desktop version center icon */}
+      <div className="relative z-10 mb-8 md:mb-0 hidden md:block">
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -61,13 +88,14 @@ const Step = ({
         </motion.div>
       </div>
 
+      {/* Desktop version right column / Mobile version detail card */}
       <motion.div
         variants={stepVariants}
         initial="hidden"
         whileInView="visible"
         transition={{ delay: 0.2 }}
         viewport={{ once: true, margin: "-100px" }}
-        className={`md:w-5/12 ${
+        className={`w-full md:w-5/12 ${
           isReversed ? "md:pr-12 md:text-right" : "md:pl-12"
         }`}
       >
@@ -110,11 +138,12 @@ export const HowItWorks = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Connection line */}
-          {/* <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-[#005DF2]/20 transform -translate-x-1/2 hidden md:block"></div> */}
+          {/* Connection line for desktop */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-[#005DF2] transform -translate-x-1/2 hidden md:block"></div>
 
           <div className="space-y-16 md:space-y-24 relative">
             {/* Step 1 */}
+
             <Step
               number={1}
               title="Choose Your Template"

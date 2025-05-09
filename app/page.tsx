@@ -22,7 +22,7 @@ import { WhyAIWorks } from "@/components/sections/why-ai-works";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       {/* Navigation */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
@@ -156,19 +156,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who We Are Section */}
       <WhoWeAre />
 
-      {/* What We Do Section */}
       <WhatWeDo />
 
-      {/* Who We Serve Section */}
       <WhoWeServe />
 
-      {/* How It Works Section - Using the new component */}
       <HowItWorks />
 
-      {/* Why AI with Paperfly Works Section */}
       <WhyAIWorks />
 
       {/* Demo Section */}
