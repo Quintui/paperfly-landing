@@ -14,6 +14,11 @@ import { DEMO_BOOKING_URL } from "@/lib/constants";
 import { MobileMenu } from "@/components/mobile-menu";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
+import { WhoWeAre } from "@/components/sections/who-we-are";
+import { WhatWeDo } from "@/components/sections/what-we-do";
+import { WhoWeServe } from "@/components/sections/who-we-serve";
+import { HowItWorks } from "@/components/sections/how-it-works";
+import { WhyAIWorks } from "@/components/sections/why-ai-works";
 
 export default function Home() {
   return (
@@ -151,86 +156,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section id="how-it-works" className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How It Works
-            </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              From Chaos to Clarity in 5 Minutes. A step-by-step guide to
-              flawless RFx documents.
-            </p>
-          </div>
+      {/* Who We Are Section */}
+      <WhoWeAre />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-            {/* Step 1 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full hover:border-[#005DF2]/30 hover:-translate-y-1">
-                <div className="absolute -top-5 -left-5 bg-[#005DF2] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
-                  1
-                </div>
-                <h3 className="text-xl font-bold mb-4 pt-2">
-                  Choose Your Template
-                </h3>
-                <p className="text-gray-700">
-                  Log in, select "Create RFP" or "Create RFI," and enter your
-                  project basics.
-                </p>
-              </div>
-            </div>
+      {/* What We Do Section */}
+      <WhatWeDo />
 
-            {/* Step 2 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full hover:border-[#005DF2]/30 hover:-translate-y-1">
-                <div className="absolute -top-5 -left-5 bg-[#005DF2] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
-                  2
-                </div>
-                <h3 className="text-xl font-bold mb-4 pt-2">
-                  Let AI Work Its Magic
-                </h3>
-                <p className="text-gray-700">
-                  Upload your notes. AI pulls the key points and fills in your
-                  draft.
-                </p>
-              </div>
-            </div>
+      {/* Who We Serve Section */}
+      <WhoWeServe />
 
-            {/* Step 3 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full hover:border-[#005DF2]/30 hover:-translate-y-1">
-                <div className="absolute -top-5 -left-5 bg-[#005DF2] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
-                  3
-                </div>
-                <h3 className="text-xl font-bold mb-4 pt-2">
-                  Generate & Polish
-                </h3>
-                <p className="text-gray-700">
-                  In less than a minute, get a ready-to-edit document. Make
-                  quick changes as needed.
-                </p>
-              </div>
-            </div>
+      {/* How It Works Section - Using the new component */}
+      <HowItWorks />
 
-            {/* Step 4 */}
-            <div className="relative">
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full hover:border-[#005DF2]/30 hover:-translate-y-1">
-                <div className="absolute -top-5 -left-5 bg-[#005DF2] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl">
-                  4
-                </div>
-                <h3 className="text-xl font-bold mb-4 pt-2">
-                  Export & Automate
-                </h3>
-                <p className="text-gray-700">
-                  Download your PDF. Instantly create a vendor form linked to
-                  your doc.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Why AI with Paperfly Works Section */}
+      <WhyAIWorks />
 
       {/* Demo Section */}
       <section className="py-16 md:py-24">
