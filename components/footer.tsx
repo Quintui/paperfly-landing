@@ -42,7 +42,7 @@ export const Footer = () => {
                 procurement process with AI-powered solutions.
               </p>
 
-              <div className="flex space-x-4 mt-6">
+              {/* <div className="flex space-x-4 mt-6">
                 <a
                   href="https://twitter.com/paperfly"
                   target="_blank"
@@ -65,7 +65,7 @@ export const Footer = () => {
                 >
                   <Mail size={20} />
                 </a>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
@@ -131,7 +131,7 @@ export const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#key-features"
+                    href="/"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     Key Features
@@ -139,7 +139,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#why-ai-works"
+                    href="/why-ai"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     Why AI Works
@@ -177,12 +177,15 @@ export const Footer = () => {
                     Privacy Policy
                   </Link>
                 </li>
-                <li>
-                  <Link href="/terms" className="text-gray-400 hover:text-[#005DF2] transition-colors">
+                {/* <li>
+                  <Link
+                    href="/terms"
+                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
+                  >
                     Terms of Service
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link
                     href="/cookies"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
@@ -197,7 +200,7 @@ export const Footer = () => {
                   >
                     GDPR Compliance
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>
