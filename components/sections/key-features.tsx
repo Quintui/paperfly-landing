@@ -87,7 +87,10 @@ export const KeyFeatures = () => {
   ];
 
   return (
-    <section id="features" className="py-16 md:py-24 relative overflow-hidden">
+    <section
+      id="key-features"
+      className="py-16 md:py-24 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute md:block hidden -bottom-40 -left-40 w-80 h-80 bg-blue-50 rounded-full"></div>
 
