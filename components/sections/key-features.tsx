@@ -16,7 +16,7 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
     <motion.div 
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
       viewport={{ once: true, margin: "-50px" }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
       className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#005DF2]/30"
@@ -24,7 +24,7 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
       <motion.div 
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
-        transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+        transition={{ duration: 0.3, delay: index * 0.05 + 0.1 }}
         viewport={{ once: true }}
         className="bg-[#005DF2]/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4 group-hover:bg-[#005DF2]/20"
       >
@@ -39,7 +39,7 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
       <motion.h3 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+        transition={{ duration: 0.3, delay: index * 0.05 + 0.15 }}
         viewport={{ once: true }}
         className="text-xl font-bold mb-3"
       >
@@ -48,7 +48,7 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
       <motion.p 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
+        transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
         viewport={{ once: true }}
         className="text-gray-700"
       >
@@ -93,7 +93,7 @@ export const KeyFeatures = () => {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
@@ -101,14 +101,14 @@ export const KeyFeatures = () => {
           <motion.div 
             initial={{ width: 0 }}
             whileInView={{ width: "5rem" }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
             className="h-1 bg-[#005DF2] mx-auto mb-8"
           ></motion.div>
           <motion.p 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: true }}
             className="text-xl text-gray-700 max-w-3xl mx-auto"
           >
@@ -133,7 +133,7 @@ export const KeyFeatures = () => {
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
           viewport={{ once: true }}
           className="mt-16 text-center"
         >

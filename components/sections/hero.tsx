@@ -12,13 +12,13 @@ export const Hero = () => {
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.1, scale: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
         className="absolute top-20 right-[10%] w-64 h-64 bg-[#005DF2] rounded-full blur-3xl"
       />
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.05, scale: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         className="absolute bottom-20 left-[10%] w-80 h-80 bg-[#005DF2] rounded-full blur-3xl"
       />
       
@@ -27,7 +27,7 @@ export const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.3 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Create RFPs & RFIs in{" "}
@@ -35,13 +35,13 @@ export const Hero = () => {
                 className="text-[#005DF2] relative inline-block"
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.7 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
               >
                 Minutes
                 <motion.span 
                   className="absolute bottom-0 left-0 w-0 h-1 bg-[#005DF2]"
                   animate={{ width: "100%" }}
-                  transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
+                  transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
                 />
               </motion.span>{" "}
               — Not Days
@@ -52,7 +52,7 @@ export const Hero = () => {
             className="text-xl text-gray-700 mb-10 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
           >
             Skip the blank page. Instantly generate professional, ready-to-use
             RFPs and RFIs without the manual grind.
@@ -61,7 +61,7 @@ export const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
             whileHover={{ scale: 1.05 }}
             className="inline-block"
           >
@@ -79,7 +79,7 @@ export const Hero = () => {
                 <motion.span
                   initial={{ x: 0 }}
                   animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1, repeat: Infinity, repeatDelay: 3 }}
+                  transition={{ duration: 0.6, repeat: Infinity, repeatDelay: 2 }}
                 >
                   <ChevronRight className="ml-2" size={20} />
                 </motion.span>
@@ -92,7 +92,7 @@ export const Hero = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 0.8, x: 0 }}
-              transition={{ duration: 1, delay: 1.2 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               className="w-32 h-32 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-4 flex items-center justify-center"
             >
               <div className="text-center">
@@ -106,7 +106,7 @@ export const Hero = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 0.8, x: 0 }}
-              transition={{ duration: 1, delay: 1.5 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
               className="w-32 h-32 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-4 flex items-center justify-center"
             >
               <div className="text-center">

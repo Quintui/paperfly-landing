@@ -9,14 +9,14 @@ export const WhatWeDo = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
 
   return (
@@ -25,7 +25,7 @@ export const WhatWeDo = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
@@ -41,7 +41,7 @@ export const WhatWeDo = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true, margin: "-100px" }}
             className="lg:w-1/2"
           >
@@ -139,7 +139,7 @@ export const WhatWeDo = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
             className="lg:w-1/2 flex items-center"
           >
@@ -154,7 +154,7 @@ export const WhatWeDo = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-white/10 backdrop-blur-sm p-6 rounded-xl mb-8"
               >
@@ -168,7 +168,7 @@ export const WhatWeDo = () => {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.8 }}
+                transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="flex items-center justify-between"
               >

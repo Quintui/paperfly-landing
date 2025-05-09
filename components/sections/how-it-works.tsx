@@ -26,7 +26,7 @@ const Step = ({
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 },
+      transition: { duration: 0.3 },
     },
   };
 
@@ -41,7 +41,7 @@ const Step = ({
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
+          transition={{ duration: 0.3, delay: 0.2, type: "spring" }}
           viewport={{ once: true }}
           className="w-20 h-20 bg-[#005DF2] rounded-full flex items-center justify-center text-white relative z-20"
         >
@@ -80,7 +80,7 @@ const Step = ({
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
+          transition={{ duration: 0.3, delay: 0.2, type: "spring" }}
           viewport={{ once: true }}
           className="w-16 h-16 bg-[#005DF2] rounded-full flex items-center justify-center text-white relative z-20"
         >
@@ -113,7 +113,7 @@ export const HowItWorks = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 },
+      transition: { duration: 0.3 },
     },
   };
 
@@ -126,7 +126,7 @@ export const HowItWorks = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
@@ -186,7 +186,7 @@ export const HowItWorks = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
           viewport={{ once: true }}
           className="text-center mt-16 md:mt-24"
         >

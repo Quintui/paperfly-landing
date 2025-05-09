@@ -12,7 +12,7 @@ export const WhoWeAre = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
@@ -24,7 +24,7 @@ export const WhoWeAre = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: true, margin: "-100px" }}
             className="lg:w-1/2"
           >
@@ -57,7 +57,7 @@ export const WhoWeAre = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
             className="lg:w-1/2"
           >
@@ -71,7 +71,7 @@ export const WhoWeAre = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
+                  transition={{ duration: 0.3, delay: 0.3 }}
                   viewport={{ once: true }}
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
                 >
@@ -83,7 +83,7 @@ export const WhoWeAre = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.7 }}
+                  transition={{ duration: 0.3, delay: 0.35 }}
                   viewport={{ once: true }}
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
                 >
@@ -97,7 +97,7 @@ export const WhoWeAre = () => {
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
                   viewport={{ once: true }}
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
                 >

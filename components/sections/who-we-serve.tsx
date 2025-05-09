@@ -16,13 +16,13 @@ export const WhoWeServe = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.3 },
     },
     hover: {
       y: -10,
       boxShadow:
         "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-      transition: { duration: 0.3 },
+      transition: { duration: 0.2 },
     },
   };
 
@@ -32,7 +32,7 @@ export const WhoWeServe = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
@@ -76,7 +76,7 @@ export const WhoWeServe = () => {
             whileInView="visible"
             whileHover="hover"
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.25 }}
             className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
           >
             <div className="h-2 bg-[#005DF2]"></div>
@@ -101,7 +101,7 @@ export const WhoWeServe = () => {
             whileInView="visible"
             whileHover="hover"
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
           >
             <div className="h-2 bg-[#005DF2]"></div>
@@ -126,7 +126,7 @@ export const WhoWeServe = () => {
             whileInView="visible"
             whileHover="hover"
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.15 }}
             className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
           >
             <div className="h-2 bg-[#005DF2]"></div>
@@ -151,7 +151,7 @@ export const WhoWeServe = () => {
             whileInView="visible"
             whileHover="hover"
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.2 }}
             className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
           >
             <div className="h-2 bg-[#005DF2]"></div>
