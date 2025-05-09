@@ -19,6 +19,7 @@ import { WhatWeDo } from "@/components/sections/what-we-do";
 import { WhoWeServe } from "@/components/sections/who-we-serve";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { WhyAIWorks } from "@/components/sections/why-ai-works";
+import { Hero } from "@/components/sections/hero";
 
 export default function Home() {
   return (
@@ -60,37 +61,8 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Hero Section - Centered */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Create RFPs & RFIs in{" "}
-              <span className="text-[#005DF2] relative inline-block">
-                Minutes
-                <span className="absolute bottom-0 left-0 w-full h-1 bg-[#005DF2]"></span>
-              </span>{" "}
-              — Not Days
-            </h1>
-            <p className="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
-              Skip the blank page. Instantly generate professional, ready-to-use
-              RFPs and RFIs without the manual grind.
-            </p>
-            <Button
-              className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
-              asChild
-            >
-              <a
-                href={DEMO_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book a Demo <ChevronRight className="ml-2" size={20} />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Key Features */}
       <section id="features" className="py-16 md:py-24">
