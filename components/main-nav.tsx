@@ -36,16 +36,16 @@ export function MainNav() {
   return (
     <NavigationMenu className="hidden lg:flex">
       <NavigationMenuList>
-        {/* About */}
+        {/* How It Works */}
         <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
+          <Link href="/#how-it-works" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
                 "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
               )}
             >
-              About Us
+              How It Works
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -63,7 +63,6 @@ export function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-
         {/* Why AI */}
         <NavigationMenuItem>
           <Link href="/why-ai" legacyBehavior passHref>
@@ -78,22 +77,22 @@ export function MainNav() {
           </Link>
         </NavigationMenuItem>
 
-        {/* How It Works */}
+        {/* About */}
         <NavigationMenuItem>
-          <Link href="/#how-it-works" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
                 "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
               )}
             >
-              How It Works
+              About Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
         {/* Demo Button */}
-        <NavigationMenuItem>
+        <NavigationMenuItem className="pl-2">
           <NavigationMenuLink asChild>
             <Link
               href={DEMO_BOOKING_URL}

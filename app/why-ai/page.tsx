@@ -50,8 +50,8 @@ export default function WhyAIPage() {
                 Why AI with Paperfly Works
               </h1>
               <p className="text-xl text-gray-700 mb-8">
-                Our advanced AI technology transforms how organizations create
-                and manage RFPs, delivering unmatched efficiency and quality.
+                Because AI should assist you—not replace you. We help you create better RFPs
+                while keeping you in full control of your content.
               </p>
             </motion.div>
           </div>
@@ -73,15 +73,14 @@ export default function WhyAIPage() {
                 </h2>
                 <div className="w-20 h-1 bg-[#005DF2] mb-8"></div>
                 <p className="text-lg text-gray-700 mb-6">
-                  Paperfly leverages state-of-the-art natural language
-                  processing and machine learning algorithms specifically
-                  trained on procurement documents and industry best practices.
+                  With Paperfly, you stay in full control of your content. Every RFP
+                  and response form is fully editable and customizable to match your
+                  specific needs and requirements.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Our AI doesn't just generate generic content—it understands
-                  the nuances of RFPs across different industries and creates
-                  tailored, professional documents that meet your specific
-                  requirements.
+                  Your data remains private and is never used to train external models.
+                  Our platform helps you make smarter decisions and create clearer
+                  comparisons, leading to better outcomes for everyone involved.
                 </p>
                 <Button className="mt-4 bg-[#005DF2] hover:bg-[#0045B5]">
                   <a
@@ -113,12 +112,12 @@ export default function WhyAIPage() {
                       />
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-[#005DF2]">
-                      Intelligent Document Processing
+                      AI-Assisted Workflow
                     </h3>
                     <p className="text-gray-700">
-                      Our AI analyzes thousands of successful RFPs to identify
-                      patterns, best practices, and effective structures,
-                      applying these insights to your documents.
+                      AI speeds up your workflow without compromising your judgment.
+                      You maintain full control while benefiting from enhanced efficiency
+                      and better decision-making tools.
                     </p>
                   </div>
                 </div>

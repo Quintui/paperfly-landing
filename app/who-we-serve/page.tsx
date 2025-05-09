@@ -231,36 +231,44 @@ export default function WhoWeServePage() {
               {[
                 {
                   name: "Technology",
+                  description: "Help tech companies source the right solutions and services with detailed technical requirements and evaluation criteria.",
                   icon: <Briefcase className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Healthcare",
+                  description: "Support healthcare providers in procuring medical equipment and services while maintaining regulatory compliance.",
                   icon: <Hospital className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Manufacturing",
+                  description: "Enable manufacturers to efficiently source materials, equipment, and services while optimizing their supply chain.",
                   icon: <Factory className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Government",
+                  description: "Streamline public sector procurement with compliant RFP processes that ensure transparency and fair competition.",
                   icon: <Landmark className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Education",
+                  description: "Help educational institutions create clear RFPs for everything from technology infrastructure to facility management.",
                   icon: <GraduationCap className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Financial Services",
+                  description: "Enable financial institutions to maintain compliance while efficiently managing vendor selection and procurement.",
                   icon: (
                     <BadgeDollarSign className="w-8 h-8" strokeWidth={1.5} />
                   ),
                 },
                 {
                   name: "Retail",
+                  description: "Support retail businesses in finding the right vendors for inventory, logistics, and store operations.",
                   icon: <ShoppingBag className="w-8 h-8" strokeWidth={1.5} />,
                 },
                 {
                   name: "Non-Profit",
+                  description: "Help non-profits maximize their impact by streamlining procurement processes and ensuring donor fund efficiency.",
                   icon: <Heart className="w-8 h-8" strokeWidth={1.5} />,
                 },
               ].map((industry, index) => (
@@ -279,6 +287,9 @@ export default function WhoWeServePage() {
                     <h3 className="text-lg font-semibold text-[#005DF2]">
                       {industry.name}
                     </h3>
+                    <p className="text-gray-600 text-sm text-center">
+                      {industry.description}
+                    </p>
                   </div>
                 </motion.div>
               ))}
