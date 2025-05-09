@@ -36,55 +36,55 @@ export function MainNav() {
   return (
     <NavigationMenu className="hidden lg:flex">
       <NavigationMenuList>
-        {/* About Dropdown */}
+        {/* About */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent">
-            About
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-2 p-4">
-              <ListItem
-                title="Who We Are"
-                onClick={() => scrollToSection("who-we-are")}
-              />
-              <ListItem
-                title="What We Do"
-                onClick={() => scrollToSection("what-we-do")}
-              />
-              <ListItem
-                title="Who We Serve"
-                onClick={() => scrollToSection("who-we-serve")}
-              />
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        {/* Features Dropdown */}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-gray-700  hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent">
-            Features
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-2 p-4">
-              <ListItem
-                title="Key Features"
-                onClick={() => scrollToSection("key-features")}
-              />
-              <ListItem
-                title="Why AI Works"
-                onClick={() => scrollToSection("why-ai-works")}
-              />
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        {/* Direct Links */}
-        <NavigationMenuItem className="pr-2">
-          <Link href="#how-it-works" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
-                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent"
+                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
+              )}
+            >
+              About Us
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+        {/* Who We Serve */}
+        <NavigationMenuItem>
+          <Link href="/who-we-serve" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
+              )}
+            >
+              Who We Serve
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+        {/* Why AI */}
+        <NavigationMenuItem>
+          <Link href="/why-ai" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
+              )}
+            >
+              Why AI
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+        {/* How It Works */}
+        <NavigationMenuItem>
+          <Link href="/#how-it-works" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
               )}
             >
               How It Works

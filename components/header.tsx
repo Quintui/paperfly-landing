@@ -10,7 +10,7 @@ import { MobileNav } from "@/components/mobile-nav";
 export const Header = () => {
   const [headerBgOpacity, setHeaderBgOpacity] = useState(0.5);
   const { scrollY } = useScroll();
-  
+
   // Transform opacity based on scroll position
   const dynamicOpacity = useTransform(scrollY, [0, 200], [0.5, 1]);
 
@@ -18,7 +18,7 @@ export const Header = () => {
     const unsubscribe = dynamicOpacity.onChange((opacity) => {
       setHeaderBgOpacity(opacity);
     });
-    
+
     return () => unsubscribe();
   }, [dynamicOpacity]);
 
@@ -33,14 +33,14 @@ export const Header = () => {
       <div className="container mx-auto px-4 relative">
         <nav className="flex items-center justify-between">
           <div>
-            <Link href="#">
+            <Link href="/">
               <Image src="/logo.svg" alt="Logo" width={122} height={28} />
             </Link>
           </div>
 
           {/* Desktop Navigation using ShadCN Navigation Menu */}
           <MainNav />
-          
+
           {/* Mobile Navigation */}
           <MobileNav />
         </nav>

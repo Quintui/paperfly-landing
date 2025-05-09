@@ -42,26 +42,30 @@ export const Footer = () => {
                 procurement process with AI-powered solutions.
               </p>
 
-              {/* <div className="flex space-x-4 mt-6">
+              <div className="flex space-x-4 mt-6">
                 <a
-                  href="#"
+                  href="https://twitter.com/paperfly"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#005DF2] transition-colors"
                 >
                   <Twitter size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://linkedin.com/company/paperfly"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#005DF2] transition-colors"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:contact@paperfly.ai"
                   className="text-gray-400 hover:text-[#005DF2] transition-colors"
                 >
                   <Mail size={20} />
                 </a>
-              </div> */}
+              </div>
             </motion.div>
           </div>
 
@@ -79,7 +83,7 @@ export const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#who-we-are"
+                    href="/about"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     Who We Are
@@ -87,7 +91,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#what-we-do"
+                    href="/what-we-do"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     What We Do
@@ -95,7 +99,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#who-we-serve"
+                    href="/who-we-serve"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     Who We Serve
@@ -103,7 +107,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#how-it-works"
+                    href="/how-it-works"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     How It Works
@@ -173,11 +177,8 @@ export const Footer = () => {
                     Privacy Policy
                   </Link>
                 </li>
-                {/* <li>
-                  <Link
-                    href="/terms"
-                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
-                  >
+                <li>
+                  <Link href="/terms" className="text-gray-400 hover:text-[#005DF2] transition-colors">
                     Terms of Service
                   </Link>
                 </li>
@@ -196,7 +197,7 @@ export const Footer = () => {
                   >
                     GDPR Compliance
                   </Link>
-                </li> */}
+                </li>
               </ul>
             </motion.div>
           </div>

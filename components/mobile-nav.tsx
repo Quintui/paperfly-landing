@@ -50,59 +50,35 @@ export function MobileNav() {
           >
             <div className="container mx-auto px-4 py-4">
               <div className="space-y-4">
-                <div>
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">
-                    About
-                  </h3>
-                  <div className="space-y-2">
-                    <button
-                      onClick={() => scrollToSection("who-we-are")}
-                      className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
-                    >
-                      Who We Are
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("what-we-do")}
-                      className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
-                    >
-                      What We Do
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("who-we-serve")}
-                      className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
-                    >
-                      Who We Serve
-                    </button>
-                  </div>
-                </div>
-
-                <div className="border-t border-gray-100 pt-4">
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">
-                    Features
-                  </h3>
-                  <div className="space-y-2">
-                    <button
-                      onClick={() => scrollToSection("key-features")}
-                      className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
-                    >
-                      Key Features
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("why-ai-works")}
-                      className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
-                    >
-                      Why AI Works
-                    </button>
-                  </div>
-                </div>
-
-                <div className="border-t border-gray-100 pt-4">
-                  <button
-                    onClick={() => scrollToSection("how-it-works")}
+                <div className="space-y-2">
+                  <a
+                    href="/about"
                     className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    About
+                  </a>
+                  <a
+                    href="/who-we-serve"
+                    className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Who We Serve
+                  </a>
+                  <a
+                    href="/why-ai"
+                    className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Why AI
+                  </a>
+                  <a
+                    href="/#how-it-works"
+                    className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
                   >
                     How It Works
-                  </button>
+                  </a>
                 </div>
 
                 <div className="border-t border-gray-100 pt-4">
