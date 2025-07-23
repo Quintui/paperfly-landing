@@ -45,7 +45,7 @@ export const WhoWeServe = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card 1 */}
+          {/* Card 1: Procurement Teams (Tech/SaaS) */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -66,10 +66,18 @@ export const WhoWeServe = () => {
                 Managing vendor selection and internal approvals with
                 streamlined processes and consistent documentation.
               </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/technology-saas-tech"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </div>
           </motion.div>
 
-          {/* Card 2 */}
+          {/* Card 2: Agencies & Consultants (Manufacturing) */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -91,10 +99,18 @@ export const WhoWeServe = () => {
                 Responding to multiple RFPs each month with professional,
                 consistent proposals that win business.
               </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/manufacturing"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </div>
           </motion.div>
 
-          {/* Card 3 */}
+          {/* Card 3: Healthcare & Nonprofits (Healthcare) */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -116,10 +132,18 @@ export const WhoWeServe = () => {
                 Meeting compliance and documentation requirements while
                 streamlining procurement processes.
               </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/healthcare"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </div>
           </motion.div>
 
-          {/* Card 4 */}
+          {/* Card 4: Small Businesses & Startups (Retail) */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -141,10 +165,18 @@ export const WhoWeServe = () => {
                 Creating professional-grade proposals without the resources of
                 larger organizations.
               </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/retail"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </div>
           </motion.div>
 
-          {/* Card 5 */}
+          {/* Card 5: RFP Writers (Government) */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
@@ -166,6 +198,14 @@ export const WhoWeServe = () => {
                 Managing RFP creation on behalf of their clients with efficiency
                 and professional results.
               </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/government"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
             </div>
           </motion.div>
 

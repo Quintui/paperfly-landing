@@ -59,30 +59,21 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
 };
 
 export const KeyFeatures = () => {
-  // Features data for easy management
-  const features = [
+  // Outcomes data for easy management
+  const outcomes = [
     {
-      icon: <Upload size={24} />,
-      title: "AI-Powered Prefill",
-      description:
-        "Upload meeting notes or documents — our AI extracts key details to auto-fill your RFP or RFI.",
+      icon: <Upload size={24} />, // You can change icons as needed
+      title: "Save ~30–50% authoring & review time vs. manual documents.",
     },
     {
       icon: <Zap size={24} />,
-      title: "Documents in Seconds",
-      description: "Generate a complete, professional draft in under a minute.",
-    },
-    {
-      icon: <PenTool size={24} />,
-      title: "Edit, Don't Write",
-      description:
-        "Review, customize, or delete sections — no need to start from scratch.",
+      title:
+        "Decide up to 2× faster with built-in scoring and side-by-side comparisons.",
     },
     {
       icon: <FileText size={24} />,
-      title: "Instant Vendor Forms",
-      description:
-        "Automatically turn your final document into a vendor-ready questionnaire.",
+      title:
+        "100% template consistency across exports (Word, PDF, Google Docs).",
     },
   ];
 
@@ -102,7 +93,7 @@ export const KeyFeatures = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">KEY OUTCOMES</h2>
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "5rem" }}
@@ -110,42 +101,32 @@ export const KeyFeatures = () => {
             viewport={{ once: true }}
             className="h-1 bg-[#005DF2] mx-auto mb-8"
           ></motion.div>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="text-xl text-gray-700 max-w-3xl mx-auto"
-          >
-            Accelerate Procurement — Not Paperwork. Smart tools built to
-            eliminate busywork and boost compliance.
-          </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <FeatureCard
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {outcomes.map((outcome, index) => (
+            <motion.div
               key={index}
-              icon={feature.icon}
-              title={feature.title}
-              description={feature.description}
-              index={index}
-            />
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#005DF2]/30 flex flex-col items-center text-center"
+            >
+              <div className="bg-[#005DF2]/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
+                <div className="text-[#005DF2]">{outcome.icon}</div>
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{outcome.title}</h3>
+            </motion.div>
           ))}
         </div>
 
-        {/* Additional highlight */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
+        <div className="mt-12 text-center">
           <span className="inline-block bg-[#005DF2]/10 text-[#005DF2] font-medium px-4 py-2 rounded-full">
-            Trusted by procurement teams across industries
+            Ranges reflect results from early customer and beta team usage;
+            actual savings vary by process maturity.
           </span>
-        </motion.div> */}
+        </div>
       </div>
     </section>
   );

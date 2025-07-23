@@ -30,21 +30,20 @@ export const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Create RFPs & RFIs in{" "}
+              Build clearer RFPs. Pick better vendors.{" "}
               <motion.span
                 className="text-[#005DF2] relative inline-block"
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
               >
-                Minutes
+                Save weeks.
                 <motion.span
                   className="absolute bottom-0 left-0 w-0 h-1 bg-[#005DF2]"
                   animate={{ width: "100%" }}
                   transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
                 />
-              </motion.span>{" "}
-              — Not Days
+              </motion.span>
             </h1>
           </motion.div>
 

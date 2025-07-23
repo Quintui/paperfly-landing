@@ -9,7 +9,6 @@ export const metadata = {
   title: "Paperfly - Create RFPs & RFIs in Minutes — Not Days",
   description:
     "Skip the blank page. Instantly generate professional, ready-to-use RFPs and RFIs without the manual grind.",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({

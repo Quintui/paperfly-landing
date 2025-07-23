@@ -22,6 +22,7 @@ import {
   Star,
 } from "lucide-react";
 import { CallToAction } from "@/components/sections/call-to-action";
+import Link from "next/link";
 
 export default function WhoWeServePage() {
   return (
@@ -231,45 +232,61 @@ export default function WhoWeServePage() {
               {[
                 {
                   name: "Technology",
-                  description: "Help tech companies source the right solutions and services with detailed technical requirements and evaluation criteria.",
+                  description:
+                    "Help tech companies source the right solutions and services with detailed technical requirements and evaluation criteria.",
                   icon: <Briefcase className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/technology-saas-tech",
                 },
                 {
                   name: "Healthcare",
-                  description: "Support healthcare providers in procuring medical equipment and services while maintaining regulatory compliance.",
+                  description:
+                    "Support healthcare providers in procuring medical equipment and services while maintaining regulatory compliance.",
                   icon: <Hospital className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/healthcare",
                 },
                 {
                   name: "Manufacturing",
-                  description: "Enable manufacturers to efficiently source materials, equipment, and services while optimizing their supply chain.",
+                  description:
+                    "Enable manufacturers to efficiently source materials, equipment, and services while optimizing their supply chain.",
                   icon: <Factory className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/manufacturing",
                 },
                 {
                   name: "Government",
-                  description: "Streamline public sector procurement with compliant RFP processes that ensure transparency and fair competition.",
+                  description:
+                    "Streamline public sector procurement with compliant RFP processes that ensure transparency and fair competition.",
                   icon: <Landmark className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/government",
                 },
                 {
                   name: "Education",
-                  description: "Help educational institutions create clear RFPs for everything from technology infrastructure to facility management.",
+                  description:
+                    "Help educational institutions create clear RFPs for everything from technology infrastructure to facility management.",
                   icon: <GraduationCap className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/education",
                 },
                 {
                   name: "Financial Services",
-                  description: "Enable financial institutions to maintain compliance while efficiently managing vendor selection and procurement.",
+                  description:
+                    "Enable financial institutions to maintain compliance while efficiently managing vendor selection and procurement.",
                   icon: (
                     <BadgeDollarSign className="w-8 h-8" strokeWidth={1.5} />
                   ),
+                  href: "/financial-services",
                 },
                 {
                   name: "Retail",
-                  description: "Support retail businesses in finding the right vendors for inventory, logistics, and store operations.",
+                  description:
+                    "Support retail businesses in finding the right vendors for inventory, logistics, and store operations.",
                   icon: <ShoppingBag className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/retail",
                 },
                 {
                   name: "Non-Profit",
-                  description: "Help non-profits maximize their impact by streamlining procurement processes and ensuring donor fund efficiency.",
+                  description:
+                    "Help non-profits maximize their impact by streamlining procurement processes and ensuring donor fund efficiency.",
                   icon: <Heart className="w-8 h-8" strokeWidth={1.5} />,
+                  href: "/non-profit",
                 },
               ].map((industry, index) => (
                 <motion.div
@@ -290,6 +307,12 @@ export default function WhoWeServePage() {
                     <p className="text-gray-600 text-sm text-center">
                       {industry.description}
                     </p>
+                    <Link
+                      href={industry.href}
+                      className="text-[#005DF2] underline hover:no-underline font-medium mt-2"
+                    >
+                      Read more
+                    </Link>
                   </div>
                 </motion.div>
               ))}

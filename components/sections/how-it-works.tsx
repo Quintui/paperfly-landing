@@ -130,10 +130,12 @@ export const HowItWorks = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase">
+            HOW IT WORKS
+          </h2>
           <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Start anywhere—we'll help you finish strong.
+            Start anywhere—finish strong.
           </p>
         </motion.div>
 
@@ -143,21 +145,20 @@ export const HowItWorks = () => {
 
           <div className="space-y-16 md:space-y-24 relative">
             {/* Step 1 */}
-
             <Step
               number={1}
-              title="Choose Your Template"
-              description="Log in, select 'Create RFP' or 'Create RFI,' and enter your project basics."
-              detailText="Choose from industry-specific templates designed for your needs, or start with a blank canvas."
+              title="Kick-Off"
+              description="Start from an industry template or blank slate."
+              detailText="Choose an industry-specific template or begin with a blank canvas to kick off your RFP process."
               icon={<FileText size={24} />}
             />
 
             {/* Step 2 */}
             <Step
               number={2}
-              title="Extract Key Details"
-              description="Upload your notes or past documents. Paperfly intelligently pulls relevant content and pre-fills your draft."
-              detailText="Our AI intelligently analyzes your documents and extracts the most relevant information to pre-populate your draft."
+              title="Upload Context"
+              description="Drop in notes, slide decks, or legacy RFPs; Paperfly extracts key requirements."
+              detailText="Upload your notes, presentations, or previous RFPs—Paperfly's AI extracts the key requirements and context for you."
               icon={<Upload size={24} />}
               isReversed={true}
             />
@@ -165,20 +166,29 @@ export const HowItWorks = () => {
             {/* Step 3 */}
             <Step
               number={3}
-              title="Generate & Polish"
-              description="Receive a complete, editable draft you can customize as needed."
-              detailText="Our AI generates a comprehensive draft that you can review, edit, and refine to match your exact requirements."
+              title="Generate & Refine"
+              description="Auto-drafted sections + suggestions for scope, timelines, evaluation criteria."
+              detailText="Receive an auto-drafted RFP with suggested sections, scope, timelines, and evaluation criteria—ready for your review and edits."
               icon={<Edit size={24} />}
             />
 
             {/* Step 4 */}
             <Step
               number={4}
-              title="Export & Automate"
-              description="Download your document and instantly generate a vendor-ready response form that matches your RFP structure."
-              detailText="Export your finalized document and automatically generate a vendor-ready response form that mirrors your RFP structure."
+              title="Publish & Share"
+              description="Export a polished RFP and spin up a matching vendor Q&A portal."
+              detailText="Export your finalized RFP and instantly create a vendor Q&A portal that matches your document structure."
               icon={<Download size={24} />}
               isReversed={true}
+            />
+
+            {/* Step 5 */}
+            <Step
+              number={5}
+              title="Score & Decide"
+              description="Centralized rubric scoring speeds consensus and audit-ready documentation."
+              detailText="Use a centralized scoring rubric to drive consensus and generate audit-ready documentation for your decision process."
+              icon={<FileText size={24} />}
             />
           </div>
         </div>
