@@ -1,6 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import {
@@ -12,6 +14,15 @@ import {
   Wrench,
   DollarSign,
   ChevronRight,
+  Clock,
+  Target,
+  Zap,
+  CheckCircle,
+  ArrowRight,
+  Settings,
+  TrendingUp,
+  Shield,
+  Users,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
@@ -38,22 +49,36 @@ export default function ManufacturingPage() {
           />
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="mb-6"
+              >
+                <Badge
+                  variant="outline"
+                  className="text-[#005DF2] border-[#005DF2] mb-4"
+                >
+                  Manufacturing Solutions
+                </Badge>
+              </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6"
               >
-                From raw materials to Industry 4.0—source with discipline.
+                Streamline Manufacturing Procurement & Supply Chain
               </motion.h1>
               <motion.p
-                className="text-xl text-gray-700 mb-10 max-w-2xl mx-auto"
+                className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                Standardize complex technical requirements and compare suppliers
-                across cost, quality, and lead-time.
+                Reduce downtime and accelerate operations with automated
+                procurement processes. From raw materials to equipment
+                specifications, ensure precision and minimize production delays.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -72,7 +97,18 @@ export default function ManufacturingPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Optimize Your Supply-Chain RFP
+                    Optimize Manufacturing RFPs
+                    <motion.span
+                      initial={{ x: 0 }}
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{
+                        duration: 0.6,
+                        repeat: Infinity,
+                        repeatDelay: 2,
+                      }}
+                    >
+                      <ChevronRight className="ml-2" size={20} />
+                    </motion.span>
                   </a>
                 </Button>
               </motion.div>
@@ -80,16 +116,181 @@ export default function ManufacturingPage() {
           </div>
         </section>
 
-        {/* KEY WINS SECTION */}
-        <section className="py-16 md:py-24 relative overflow-hidden">
-          <div className="container mx-auto px-4 relative z-10">
+        {/* BENEFITS SECTION */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">KEY WINS</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Why Manufacturers Choose Paperfly
+              </h2>
+              <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Paperfly streamlines procurement and supply chain processes for
+                manufacturers, reducing downtime and accelerating operations
+                with precision documentation and AI-enhanced vendor scoring.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Clock className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Reduce Downtime
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Minimize production delays through precise documentation
+                      and automated vendor evaluation processes.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Settings className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Complex Equipment Specs
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Automate complex equipment specifications and raw
+                      materials sourcing with industry-specific templates.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Target className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      AI-Enhanced Scoring
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      AI-enhanced vendor scoring promotes transparency and
+                      data-driven decisions, enhancing operational efficiency.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <DollarSign className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Cost Savings
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Achieve significant cost savings through standardized
+                      procurement processes and optimized vendor relationships.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Truck className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Supply Chain Optimization
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Streamline supply chain processes and vendor management
+                      for faster project execution and improved productivity.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <TrendingUp className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Productivity Impact
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Significantly impact productivity and profitability
+                      through faster project execution and reduced operational
+                      friction.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* KEY METRICS SECTION */}
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Manufacturing Results
+              </h2>
               <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -97,45 +298,58 @@ export default function ManufacturingPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  ~25–35% faster sourcing cycles
-                </h3>
-                <p className="text-gray-700">
-                  for equipment & critical components.
-                </p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    40%
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Faster Execution
+                  </h3>
+                  <p className="text-gray-700">
+                    Standardized procurement processes
+                  </p>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  Structured supplier scorecards
-                </h3>
-                <p className="text-gray-700">
-                  (cost, tolerance, PPAP, OTIF history).
-                </p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    25%
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Cost Reduction</h3>
+                  <p className="text-gray-700">
+                    Through optimized vendor relationships
+                  </p>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  Global language & unit support
-                </h3>
-                <p className="text-gray-700">for multi-site RFQs.</p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    Zero
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Documentation Errors
+                  </h3>
+                  <p className="text-gray-700">Precision in specifications</p>
+                </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* WHY PAPERFLY FOR MANUFACTURING SECTION */}
-        <section className="py-16 md:py-24 bg-gray-900 text-white">
+        {/* USE CASES SECTION */}
+        <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -144,122 +358,78 @@ export default function ManufacturingPage() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Paperfly for Manufacturing
+                Real Manufacturing Use Cases
               </h2>
               <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
             </motion.div>
-            <div className="flex flex-col lg:flex-row gap-10">
-              {/* Manufacturing Needs */}
+
+            <div className="grid lg:grid-cols-2 gap-8">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4 }}
-                className="lg:w-1/2"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl h-full">
-                  <h3 className="text-2xl font-bold mb-6 text-[#60a5fa]">
-                    Manufacturing Needs
-                  </h3>
-                  <ul className="space-y-6">
-                    <li className="flex items-start">
-                      <FileText
-                        className="text-[#60a5fa] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>
-                        Upload BOMs or CAD/STEP notes; map tolerances to
-                        response fields.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <Wrench className="text-[#60a5fa] mt-1 mr-3" size={20} />
-                      <span>
-                        Capture warranty, tooling, and maintenance obligations
-                        uniformly.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <DollarSign
-                        className="text-[#60a5fa] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>
-                        Track landed-cost scenarios (FOB vs. DDP) within the
-                        evaluation view.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-10 h-10 bg-[#005DF2]/10 rounded-lg flex items-center justify-center">
+                        <Factory className="text-[#005DF2]" size={20} />
+                      </div>
+                      <CardTitle className="text-xl text-[#005DF2]">
+                        Automotive Parts Sourcing
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4">
+                      Auto manufacturer needs specialized components for new
+                      vehicle line. Engineering defines technical specs, Quality
+                      sets testing requirements, Procurement manages vendor
+                      relationships.
+                    </p>
+                    <div className="flex items-center text-sm text-[#005DF2] font-semibold">
+                      <ArrowRight size={16} className="mr-2" />
+                      Production timeline met with 20% cost savings through
+                      optimized vendor selection
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
-              {/* Paperfly Solution */}
+
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-                className="lg:w-1/2"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
               >
-                <div className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl h-full">
-                  <h3 className="text-2xl font-bold mb-6 text-[#34d399]">
-                    Paperfly Solution
-                  </h3>
-                  <ul className="space-y-6">
-                    <li className="flex items-start">
-                      <FileText
-                        className="text-[#34d399] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>Attach spec drawings and map tolerances.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Truck className="text-[#34d399] mt-1 mr-3" size={20} />
-                      <span>Model freight and landed-cost scenarios.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Globe className="text-[#34d399] mt-1 mr-3" size={20} />
-                      <span>Support for global units and multi-site RFQs.</span>
-                    </li>
-                  </ul>
-                </div>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-10 h-10 bg-[#005DF2]/10 rounded-lg flex items-center justify-center">
+                        <Wrench className="text-[#005DF2]" size={20} />
+                      </div>
+                      <CardTitle className="text-xl text-[#005DF2]">
+                        Equipment Replacement
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4">
+                      Electronics manufacturer must replace aging production
+                      equipment. Operations defines capacity requirements,
+                      Maintenance specifies reliability needs, Finance sets
+                      budget parameters.
+                    </p>
+                    <div className="flex items-center text-sm text-[#005DF2] font-semibold">
+                      <ArrowRight size={16} className="mr-2" />
+                      Installation completed with zero production downtime
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* USE-CASE SNAPSHOT SECTION */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Use-Case Snapshot
-              </h2>
-              <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
-            </motion.div>
-            <div className="max-w-6xl mx-auto bg-blue-50 border border-blue-100 rounded-2xl p-0 md:p-0 shadow-lg flex flex-col md:flex-row items-center md:items-stretch">
-              {/* Left: Text */}
-              <div className="flex-1 p-10 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-[#005DF2] mb-4">
-                  Automotive Supplier Example
-                </h3>
-                <p className="text-lg text-gray-800 mb-0">
-                  An automotive supplier needs new CNC machining capacity in
-                  APAC, EU, and NA. Engineering attaches spec drawings,
-                  Procurement sets quality weights, Finance models freight
-                  scenarios. Paperfly ranks suppliers by tolerance capability
-                  and total landed cost—decision in days, not weeks.
-                </p>
-              </div>
-              {/* Right: Big Icon */}
-              <div className="flex-1 flex items-center justify-center bg-[#005DF2] rounded-b-2xl md:rounded-b-none md:rounded-r-2xl p-10">
-                <Factory className="text-white" size={120} />
-              </div>
-            </div>
-          </div>
-        </section>
         {/* CALL TO ACTION SECTION */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
@@ -273,11 +443,12 @@ export default function ManufacturingPage() {
                 <div className="md:w-1/2 p-8 md:p-12 flex items-center">
                   <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                      Optimize Your Supply-Chain RFP
+                      Ready to Optimize Manufacturing Procurement?
                     </h2>
                     <p className="text-xl text-white/90 mb-8">
-                      Ready to standardize sourcing and compare suppliers with
-                      discipline? Create RFQs and RFPs in minutes — not weeks.
+                      Join manufacturers who've reduced costs by 25% and
+                      accelerated project execution by 40% through standardized
+                      procurement processes.
                     </p>
                     <div className="inline-block">
                       <Button
@@ -290,7 +461,7 @@ export default function ManufacturingPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Optimize Your Supply-Chain RFP
+                          Book Manufacturing Demo
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>
@@ -300,21 +471,21 @@ export default function ManufacturingPage() {
                 <div className="md:w-1/2 bg-[#004acf] p-8 md:p-12 flex items-center justify-center">
                   <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm w-full">
                     <div className="flex items-center space-x-4 mb-6">
-                      <FileText className="text-white" size={24} />
+                      <Zap className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        25–35% faster sourcing
+                        40% faster execution
                       </span>
                     </div>
                     <div className="flex items-center space-x-4 mb-6">
-                      <ClipboardCheck className="text-white" size={24} />
+                      <DollarSign className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        Structured supplier scorecards
+                        25% cost reduction
                       </span>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <Globe className="text-white" size={24} />
+                      <CheckCircle className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        Global language & unit support
+                        Zero documentation errors
                       </span>
                     </div>
                   </div>

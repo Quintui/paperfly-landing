@@ -1,14 +1,27 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import {
-  Gavel,
+  Building,
   FileText,
-  Lock,
-  Users,
   ClipboardCheck,
+  Scale,
+  Users,
+  Shield,
+  DollarSign,
   ChevronRight,
+  Clock,
+  Target,
+  Zap,
+  CheckCircle,
+  ArrowRight,
+  Eye,
+  Gavel,
+  TrendingUp,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
@@ -35,22 +48,36 @@ export default function GovernmentPage() {
           />
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="mb-6"
+              >
+                <Badge
+                  variant="outline"
+                  className="text-[#005DF2] border-[#005DF2] mb-4"
+                >
+                  Government Solutions
+                </Badge>
+              </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6"
               >
-                Transparency and fairness—baked into every RFP.
+                Transparent, Efficient Government Procurement
               </motion.h1>
               <motion.p
-                className="text-xl text-gray-700 mb-10 max-w-2xl mx-auto"
+                className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                Meet statutory procurement rules and public disclosure mandates
-                without slowing delivery.
+                Empower government agencies with transparent, efficient, and
+                compliant RFP processes. Reduce administrative burdens while
+                enhancing public trust and optimizing taxpayer value.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -69,7 +96,18 @@ export default function GovernmentPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    See a Government Template
+                    Book a Government Demo
+                    <motion.span
+                      initial={{ x: 0 }}
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{
+                        duration: 0.6,
+                        repeat: Infinity,
+                        repeatDelay: 2,
+                      }}
+                    >
+                      <ChevronRight className="ml-2" size={20} />
+                    </motion.span>
                   </a>
                 </Button>
               </motion.div>
@@ -77,16 +115,183 @@ export default function GovernmentPage() {
           </div>
         </section>
 
-        {/* KEY WINS SECTION */}
-        <section className="py-16 md:py-24 relative overflow-hidden">
-          <div className="container mx-auto px-4 relative z-10">
+        {/* BENEFITS SECTION */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">KEY WINS</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Why Government Agencies Choose Paperfly
+              </h2>
+              <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Paperfly empowers government agencies with transparent,
+                efficient, and compliant RFP processes, reducing administrative
+                burdens while enhancing public trust and accountability.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Eye className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Enhanced Transparency
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Structured documentation and standardized templates ensure
+                      complete transparency and public accountability.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Scale className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Regulatory Compliance
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Built-in compliance checks align with regulatory standards
+                      and procurement best practices for all government levels.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Target className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Fair Vendor Evaluation
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Advanced AI scoring technology ensures fair and unbiased
+                      vendor evaluations that align with procurement standards.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Clock className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Accelerated Timelines
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Streamlined collaboration across multiple departments
+                      accelerates project timelines and decision-making
+                      processes.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <DollarSign className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Taxpayer Value
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Optimize taxpayer value through efficient processes and
+                      data-driven vendor selection that maximizes public
+                      benefit.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+              >
+                <Card className="h-full border-2 hover:border-[#005DF2] transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-[#005DF2]/10 rounded-lg flex items-center justify-center mb-4">
+                      <Users className="text-[#005DF2]" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-[#005DF2]">
+                      Reduced Administrative Burden
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Automated vendor communications and standardized workflows
+                      significantly reduce administrative overhead and
+                      complexity.
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* KEY METRICS SECTION */}
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Government Results
+              </h2>
               <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -94,44 +299,56 @@ export default function GovernmentPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  Policy-aligned formats
-                </h3>
-                <p className="text-gray-700">
-                  for FAR, state / provincial acts, and EU-style directive
-                  language.
-                </p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    50%
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Faster Processing
+                  </h3>
+                  <p className="text-gray-700">Reduced administrative burden</p>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  Immutable audit trail
-                </h3>
-                <p className="text-gray-700">—every change, timestamped.</p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    100%
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Compliance Ready
+                  </h3>
+                  <p className="text-gray-700">
+                    Regulatory standards alignment
+                  </p>
+                </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
-                className="bg-white rounded-xl p-8 shadow-lg border border-gray-100"
+                className="text-center"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#005DF2]">
-                  Equal-access vendor Q&A archive
-                </h3>
-                <p className="text-gray-700">to reduce protests.</p>
+                <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+                  <div className="text-4xl font-bold text-[#005DF2] mb-2">
+                    Full
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Transparency</h3>
+                  <p className="text-gray-700">Public accountability ensured</p>
+                </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* WHY PAPERFLY FOR GOVERNMENT SECTION */}
-        <section className="py-16 md:py-24 bg-gray-900 text-white">
+        {/* USE CASES SECTION */}
+        <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -140,121 +357,79 @@ export default function GovernmentPage() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Paperfly for Government
+                Real Government Use Cases
               </h2>
               <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
             </motion.div>
-            <div className="flex flex-col lg:flex-row gap-10">
-              {/* Public-Sector Challenge */}
+
+            <div className="grid lg:grid-cols-2 gap-8">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4 }}
-                className="lg:w-1/2"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl h-full">
-                  <h3 className="text-2xl font-bold mb-6 text-[#60a5fa]">
-                    Public-Sector Challenge
-                  </h3>
-                  <ul className="space-y-6">
-                    <li className="flex items-start">
-                      <Users className="text-[#60a5fa] mt-1 mr-3" size={20} />
-                      <span>Complex, multi-layer approvals</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ClipboardCheck
-                        className="text-[#60a5fa] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>Mandatory scoring transparency</span>
-                    </li>
-                    <li className="flex items-start">
-                      <FileText
-                        className="text-[#60a5fa] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>Vendor questions overwhelm staff</span>
-                    </li>
-                  </ul>
-                </div>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-10 h-10 bg-[#005DF2]/10 rounded-lg flex items-center justify-center">
+                        <Building className="text-[#005DF2]" size={20} />
+                      </div>
+                      <CardTitle className="text-xl text-[#005DF2]">
+                        City Infrastructure Project
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4">
+                      Municipal government needs contractors for major road
+                      infrastructure project. Public Works defines technical
+                      requirements, Finance sets budget parameters, Legal
+                      ensures compliance with municipal regulations.
+                    </p>
+                    <div className="flex items-center text-sm text-[#005DF2] font-semibold">
+                      <ArrowRight size={16} className="mr-2" />
+                      Project awarded 4 weeks ahead of schedule with full
+                      transparency
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
-              {/* Paperfly Response */}
+
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-                className="lg:w-1/2"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
               >
-                <div className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl h-full">
-                  <h3 className="text-2xl font-bold mb-6 text-[#34d399]">
-                    Paperfly Response
-                  </h3>
-                  <ul className="space-y-6">
-                    <li className="flex items-start">
-                      <Lock className="text-[#34d399] mt-1 mr-3" size={20} />
-                      <span>Sequential approvals & e-sign capture.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <ClipboardCheck
-                        className="text-[#34d399] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>
-                        Locked weighted rubrics and auto-generated award
-                        reports.
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <FileText
-                        className="text-[#34d399] mt-1 mr-3"
-                        size={20}
-                      />
-                      <span>
-                        Central forum publishes answers to all registered
-                        bidders equally.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-10 h-10 bg-[#005DF2]/10 rounded-lg flex items-center justify-center">
+                        <Shield className="text-[#005DF2]" size={20} />
+                      </div>
+                      <CardTitle className="text-xl text-[#005DF2]">
+                        Federal IT Security Upgrade
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4">
+                      Federal agency requires cybersecurity infrastructure
+                      upgrade. IT Security defines requirements, Procurement
+                      manages vendor process, Compliance ensures federal
+                      standards adherence.
+                    </p>
+                    <div className="flex items-center text-sm text-[#005DF2] font-semibold">
+                      <ArrowRight size={16} className="mr-2" />
+                      Implementation completed with zero security gaps and full
+                      audit compliance
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* USE-CASE SNAPSHOT SECTION */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Use-Case Snapshot
-              </h2>
-              <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
-            </motion.div>
-            <div className="max-w-6xl mx-auto bg-blue-50 border border-blue-100 rounded-2xl p-0 md:p-0 shadow-lg flex flex-col md:flex-row items-center md:items-stretch">
-              {/* Left: Text */}
-              <div className="flex-1 p-10 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-[#005DF2] mb-4">
-                  Transit Authority Example
-                </h3>
-                <p className="text-lg text-gray-800 mb-0">
-                  A transit authority seeks an e-ticketing system. Paperfly
-                  enforces pre-published scoring weights, publishes all vendor
-                  Q&A publicly, and generates an award rationale packet ready
-                  for FOIA / ATIP requests—minimizing bid protests.
-                </p>
-              </div>
-              {/* Right: Big Icon */}
-              <div className="flex-1 flex items-center justify-center bg-[#005DF2] rounded-b-2xl md:rounded-b-none md:rounded-r-2xl p-10">
-                <Gavel className="text-white" size={120} />
-              </div>
-            </div>
-          </div>
-        </section>
         {/* CALL TO ACTION SECTION */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
@@ -268,11 +443,12 @@ export default function GovernmentPage() {
                 <div className="md:w-1/2 p-8 md:p-12 flex items-center">
                   <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                      See a Government Template
+                      Ready to Transform Government Procurement?
                     </h2>
                     <p className="text-xl text-white/90 mb-8">
-                      Want to see how Paperfly supports transparency, fairness,
-                      and compliance? Explore a government RFP template now.
+                      Join government agencies that have reduced administrative
+                      burden by 50% while maintaining full transparency and
+                      regulatory compliance.
                     </p>
                     <div className="inline-block">
                       <Button
@@ -285,7 +461,7 @@ export default function GovernmentPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          See a Government Template
+                          Book a Government Demo
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>
@@ -295,21 +471,21 @@ export default function GovernmentPage() {
                 <div className="md:w-1/2 bg-[#004acf] p-8 md:p-12 flex items-center justify-center">
                   <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm w-full">
                     <div className="flex items-center space-x-4 mb-6">
-                      <FileText className="text-white" size={24} />
+                      <Zap className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        Policy-aligned formats
+                        50% faster processing
                       </span>
                     </div>
                     <div className="flex items-center space-x-4 mb-6">
-                      <Lock className="text-white" size={24} />
+                      <Scale className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        Immutable audit trail
+                        100% compliance ready
                       </span>
                     </div>
                     <div className="flex items-center space-x-4">
-                      <Users className="text-white" size={24} />
+                      <Eye className="text-white" size={24} />
                       <span className="text-white text-lg font-semibold">
-                        Equal-access Q&A archive
+                        Full transparency
                       </span>
                     </div>
                   </div>

@@ -91,14 +91,6 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/what-we-do"
-                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
-                  >
-                    What We Do
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/who-we-serve"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
@@ -107,7 +99,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/how-it-works"
+                    href="/#how-it-works"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     How It Works
@@ -230,7 +222,7 @@ export const Footer = () => {
           >
             © {new Date().getFullYear()} Paperfly. All rights reserved.
           </motion.p>
-          <motion.div
+          {/* <motion.div
             className="text-gray-500 text-sm"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -238,7 +230,7 @@ export const Footer = () => {
             viewport={{ once: true }}
           >
             Designed with ❤️ for better procurement
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </footer>
