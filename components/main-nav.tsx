@@ -91,14 +91,14 @@ export function MainNav() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/blogs" legacyBehavior passHref>
+          <Link href="/blog" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
                 "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
               )}
             >
-              Blogs
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

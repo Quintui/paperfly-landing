@@ -36,7 +36,7 @@ const WhyRfpCreationIsStillBrokenIn2025AndHowToFixIt = () => {
                 >
                   Procurement
                 </Badge>
-                <div className="flex items-center space-x-2 text-slate-500">
+                <div className="md:flex hidden  items-center space-x-2 text-slate-500">
                   <User className="w-4 h-4" />
                   <span className="font-medium">Paperfly Team</span>
                   <span>•</span>

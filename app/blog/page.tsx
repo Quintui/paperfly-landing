@@ -32,6 +32,61 @@ const blogPosts = [
     tags: ["RFP", "Procurement", "AI", "Automation"],
     featured: true,
   },
+  {
+    id: 2,
+    slug: "how-to-overcome-the-biggest-challenges-in-government-rfp-creation",
+    title: "How to Overcome the Biggest Challenges in Government RFP Creation",
+    excerpt:
+      "Government procurement is critical for delivering public services effectively, yet the RFP creation process often becomes a major obstacle for procurement teams.",
+    author: "Paperfly Team",
+    date: "January 20, 2025",
+    readTime: "6 min read",
+    category: "Government",
+    tags: ["Government RFP", "Procurement", "AI", "Automation", "Compliance"],
+    featured: true,
+  },
+  {
+    id: 3,
+    slug: "simplifying-healthcare-rfps-overcoming-complexity-and-ensuring-compliance",
+    title:
+      "Simplifying Healthcare RFPs: Overcoming Complexity and Ensuring Compliance",
+    excerpt:
+      "The healthcare sector faces some of the most complex procurement requirements of any industry. Every RFP issued by healthcare organizations carries immense responsibility.",
+    author: "Paperfly Team",
+    date: "January 25, 2025",
+    readTime: "7 min read",
+    category: "Healthcare",
+    tags: [
+      "Healthcare RFP",
+      "HIPAA",
+      "Procurement",
+      "AI",
+      "Automation",
+      "Compliance",
+    ],
+    featured: false,
+  },
+  {
+    id: 4,
+    slug: "accelerating-tech-procurement-fixing-common-mistakes-in-rfp-creation",
+    title:
+      "Accelerating Tech Procurement: Fixing Common Mistakes in RFP Creation",
+    excerpt:
+      "In the fast-paced world of technology and SaaS companies, procurement often feels rushed. RFP processes designed to move quickly frequently skip critical steps.",
+    author: "Paperfly Team",
+    date: "January 30, 2025",
+    readTime: "6 min read",
+    category: "AI & Technology",
+    tags: [
+      "Tech Procurement",
+      "SaaS",
+      "Procurement",
+      "AI",
+      "Automation",
+      "Security",
+    ],
+    featured: false,
+  },
 ];
 
 const categories = [
@@ -40,6 +95,7 @@ const categories = [
   "AI & Technology",
   "Best Practices",
   "Government",
+  "Healthcare",
   "Case Studies",
   "Vendor Relations",
 ];
@@ -163,7 +219,7 @@ const Blogs = () => {
 
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredPosts.map((post) => (
-                <Link href={`/blogs/${post.slug}`}>
+                <Link href={`/blog/${post.slug}`}>
                   <Card
                     key={post.id}
                     className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-slate-50"
@@ -251,7 +307,7 @@ const Blogs = () => {
 
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
             {regularPosts.map((post) => (
-              <Link href={`/blogs/${post.slug}`}>
+              <Link href={`/blog/${post.slug}`}>
                 <Card
                   key={post.id}
                   className="group cursor-pointer hover:shadow-lg transition-all duration-300 border border-slate-200/60 bg-white"

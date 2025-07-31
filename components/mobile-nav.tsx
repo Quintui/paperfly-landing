@@ -79,6 +79,13 @@ export function MobileNav() {
                   >
                     How It Works
                   </a>
+                  <a
+                    href="/blog"
+                    className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Blog
+                  </a>
                 </div>
 
                 <div className="border-t border-gray-100 pt-4">
