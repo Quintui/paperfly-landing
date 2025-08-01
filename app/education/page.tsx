@@ -585,7 +585,7 @@ export default function EducationPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button
-                        className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                        className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl h-[50px]"
                         asChild
                       >
                         <a
@@ -599,7 +599,7 @@ export default function EducationPage() {
                         </a>
                       </Button>
                       <Button
-                        className="bg-transparent border border-white text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300"
+                        className="bg-transparent border border-white text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300 h-[50px]"
                         variant="outline"
                         asChild
                       >

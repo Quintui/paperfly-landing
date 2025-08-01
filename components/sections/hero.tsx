@@ -65,7 +65,7 @@ export const Hero = () => {
           >
             <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
               <Button
-                className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl h-[50px]"
                 asChild
               >
                 <a
@@ -92,7 +92,7 @@ export const Hero = () => {
 
             <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
               <Button
-                className="bg-transparent border border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+                className="bg-transparent border border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300 h-[50px]"
                 variant="outline"
                 asChild
               >

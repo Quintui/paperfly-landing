@@ -56,7 +56,7 @@ export const CallToAction = () => {
                     className="inline-block"
                   >
                     <Button
-                      className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                      className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl h-[50px]"
                       asChild
                     >
                       <a
@@ -86,7 +86,7 @@ export const CallToAction = () => {
                     className="inline-block"
                   >
                     <Button
-                      className="bg-transparent text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300 border border-white"
+                      className="bg-transparent text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300 border border-white h-[50px]"
                       variant="outline"
                       asChild
                     >
