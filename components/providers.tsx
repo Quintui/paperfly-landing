@@ -11,7 +11,6 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     if (!posthogPublicKey) return;
 
     posthog.init(posthogPublicKey ?? "", {
-      api_host: "/ingest",
       ui_host: "https://us.i.posthog.com",
       loaded: () => {
         if (process.env.NODE_ENV === "development") posthog.opt_out_capturing();
