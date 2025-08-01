@@ -4,7 +4,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -109,7 +109,7 @@ export function MobileNav() {
                     className="w-full border-gray-300 text-gray-900 hover:bg-gray-100 bg-white"
                     asChild
                   >
-                    <a href="/pricing">Get Started</a>
+                    <a href={DASHBOARD_URL}>Get Started</a>
                   </Button>
                 </div>
               </div>

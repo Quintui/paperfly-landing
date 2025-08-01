@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { DASHBOARD_URL } from "@/lib/constants";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
 import { CallToAction } from "@/components/sections/call-to-action";
 
@@ -272,9 +273,12 @@ export default function Page() {
                 <Button
                   size="lg"
                   className="bg-[#005DF2] text-white hover:bg-[#0052d4]"
+                  asChild
                 >
-                  Get Started
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                  <a href={DASHBOARD_URL}>
+                    Get Started
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
                 </Button>
                 <a
                   href={DEMO_BOOKING_URL}

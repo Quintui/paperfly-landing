@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 
 export const Hero = () => {
   return (
@@ -61,33 +61,46 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.2, delay: 0.2 }}
-            whileHover={{ scale: 1.05 }}
-            className="inline-block"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
-              className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
-              asChild
-            >
-              <a
-                href={DEMO_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center"
+            <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
+              <Button
+                className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                asChild
               >
-                Book a Demo
-                <motion.span
-                  initial={{ x: 0 }}
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{
-                    duration: 0.6,
-                    repeat: Infinity,
-                    repeatDelay: 2,
-                  }}
+                <a
+                  href={DEMO_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
                 >
-                  <ChevronRight className="ml-2" size={20} />
-                </motion.span>
-              </a>
-            </Button>
+                  Book a Demo
+                  <motion.span
+                    initial={{ x: 0 }}
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{
+                      duration: 0.6,
+                      repeat: Infinity,
+                      repeatDelay: 2,
+                    }}
+                  >
+                    <ChevronRight className="ml-2" size={20} />
+                  </motion.span>
+                </a>
+              </Button>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
+              <Button
+                className="bg-transparent border border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg transition-all duration-300"
+                variant="outline"
+                asChild
+              >
+                <a href={DASHBOARD_URL} className="flex items-center">
+                  Get Started
+                </a>
+              </Button>
+            </motion.div>
           </motion.div>
 
           {/* Floating elements */}

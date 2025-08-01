@@ -26,7 +26,7 @@ import {
   UserCheck,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 
 export default function HealthcarePage() {
   return (
@@ -117,12 +117,7 @@ export default function HealthcarePage() {
                   className="border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
                   asChild
                 >
-                  <a
-                    href={DEMO_BOOKING_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
+                  <a href={DASHBOARD_URL} className="flex items-center">
                     Get Started
                     <ChevronRight className="ml-2" size={20} />
                   </a>

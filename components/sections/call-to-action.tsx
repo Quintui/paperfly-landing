@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Clock } from "lucide-react";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 import { motion } from "framer-motion";
 
 export const CallToAction = () => {
@@ -90,7 +90,7 @@ export const CallToAction = () => {
                       variant="outline"
                       asChild
                     >
-                      <a href="/pricing" className="flex items-center">
+                      <a href={DASHBOARD_URL} className="flex items-center">
                         Get Started
                       </a>
                     </Button>

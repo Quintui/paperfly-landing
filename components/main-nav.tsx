@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 import { buttonVariants } from "./ui/button";
 
 export function MainNav() {
@@ -143,7 +143,7 @@ export function MainNav() {
         <NavigationMenuItem className="pl-2">
           <NavigationMenuLink asChild>
             <Link
-              href="/pricing"
+              href={DASHBOARD_URL}
               className={buttonVariants({ size: "sm", variant: "outline" })}
             >
               Get Started
