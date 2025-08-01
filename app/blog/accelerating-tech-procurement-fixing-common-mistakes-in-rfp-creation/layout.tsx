@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    "article:published_time": "2025-01-30T00:00:00.000Z",
-    "article:modified_time": "2025-01-30T00:00:00.000Z",
+    "article:published_time": "2025-06-01T00:00:00.000Z",
+    "article:modified_time": "2025-06-01T00:00:00.000Z",
     "article:author": "Paperfly Team",
     "article:section": "Tech Procurement",
     "article:tag": [

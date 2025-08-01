@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "article",
-    publishedTime: "2025-01-25T00:00:00.000Z",
-    modifiedTime: "2025-01-25T00:00:00.000Z",
+    publishedTime: "2025-07-25T00:00:00.000Z",
+    modifiedTime: "2025-07-25T00:00:00.000Z",
     authors: ["Paperfly Team"],
     tags: [
       "Healthcare RFP",
@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    "article:published_time": "2025-01-25T00:00:00.000Z",
-    "article:modified_time": "2025-01-25T00:00:00.000Z",
+    "article:published_time": "2025-07-25T00:00:00.000Z",
+    "article:modified_time": "2025-07-25T00:00:00.000Z",
     "article:author": "Paperfly Team",
     "article:section": "Healthcare Procurement",
     "article:tag": [

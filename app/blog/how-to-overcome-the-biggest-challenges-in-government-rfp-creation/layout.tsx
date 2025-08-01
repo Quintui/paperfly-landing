@@ -71,8 +71,8 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    "article:published_time": "2025-01-20T00:00:00.000Z",
-    "article:modified_time": "2025-01-20T00:00:00.000Z",
+    "article:published_time": "2025-08-01T00:00:00.000Z",
+    "article:modified_time": "2025-08-01T00:00:00.000Z",
     "article:author": "Paperfly Team",
     "article:section": "Government Procurement",
     "article:tag": [

@@ -47,7 +47,7 @@ const SimplifyingHealthcareRfps = () => {
                   <span className="font-medium">Paperfly Team</span>
                   <span>•</span>
                   <Calendar className="w-4 h-4" />
-                  <span>January 2025</span>
+                  <span>July 2025</span>
                   <span>•</span>
                   <Clock className="w-4 h-4" />
                   <span>7 min read</span>

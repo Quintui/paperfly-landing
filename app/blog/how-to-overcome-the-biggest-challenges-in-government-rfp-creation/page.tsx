@@ -44,7 +44,7 @@ const HowToOvercomeGovernmentRfpChallenges = () => {
                   <span className="font-medium">Paperfly Team</span>
                   <span>•</span>
                   <Calendar className="w-4 h-4" />
-                  <span>January 2025</span>
+                  <span>August 2025</span>
                   <span>•</span>
                   <Clock className="w-4 h-4" />
                   <span>6 min read</span>

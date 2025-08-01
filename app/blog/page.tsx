@@ -26,7 +26,7 @@ const blogPosts = [
     excerpt:
       "Despite all the technological progress in procurement, RFP creation remains one of the most painful, manual, and inefficient parts of the vendor selection process.",
     author: "Paperfly Team",
-    date: "January 15, 2025",
+    date: "June 15, 2025",
     readTime: "8 min read",
     category: "Procurement",
     tags: ["RFP", "Procurement", "AI", "Automation"],
@@ -39,7 +39,7 @@ const blogPosts = [
     excerpt:
       "Government procurement is critical for delivering public services effectively, yet the RFP creation process often becomes a major obstacle for procurement teams.",
     author: "Paperfly Team",
-    date: "January 20, 2025",
+    date: "August 1, 2025",
     readTime: "6 min read",
     category: "Government",
     tags: ["Government RFP", "Procurement", "AI", "Automation", "Compliance"],
@@ -53,7 +53,7 @@ const blogPosts = [
     excerpt:
       "The healthcare sector faces some of the most complex procurement requirements of any industry. Every RFP issued by healthcare organizations carries immense responsibility.",
     author: "Paperfly Team",
-    date: "January 25, 2025",
+    date: "July 25, 2025",
     readTime: "7 min read",
     category: "Healthcare",
     tags: [
@@ -74,7 +74,7 @@ const blogPosts = [
     excerpt:
       "In the fast-paced world of technology and SaaS companies, procurement often feels rushed. RFP processes designed to move quickly frequently skip critical steps.",
     author: "Paperfly Team",
-    date: "January 30, 2025",
+    date: "June 1, 2025",
     readTime: "6 min read",
     category: "AI & Technology",
     tags: [
