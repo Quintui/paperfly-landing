@@ -105,6 +105,30 @@ export const Footer = () => {
                     How It Works
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/pricing"
+                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
+                  >
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/why-ai"
+                    className="text-gray-400 hover:text-[#005DF2] transition-colors"
+                  >
+                    Why AI
+                  </Link>
+                </li>
               </ul>
             </motion.div>
           </div>

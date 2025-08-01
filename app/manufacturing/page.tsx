@@ -84,8 +84,7 @@ export default function ManufacturingPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.2, delay: 0.2 }}
-                whileHover={{ scale: 1.05 }}
-                className="inline-block"
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
                 <Button
                   className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
@@ -97,7 +96,7 @@ export default function ManufacturingPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Get Started
+                    Book a Demo
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -109,6 +108,21 @@ export default function ManufacturingPage() {
                     >
                       <ChevronRight className="ml-2" size={20} />
                     </motion.span>
+                  </a>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                  asChild
+                >
+                  <a
+                    href={DEMO_BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    Get Started
+                    <ChevronRight className="ml-2" size={20} />
                   </a>
                 </Button>
               </motion.div>
@@ -450,9 +464,23 @@ export default function ManufacturingPage() {
                       accelerated project execution by 40% through standardized
                       procurement processes.
                     </p>
-                    <div className="inline-block">
+                    <div className="flex flex-col sm:flex-row gap-4">
                       <Button
                         className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                        asChild
+                      >
+                        <a
+                          href={DEMO_BOOKING_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center"
+                        >
+                          Book a Demo
+                          <ChevronRight className="ml-2" size={20} />
+                        </a>
+                      </Button>
+                      <Button
+                        className="bg-transparent border border-white text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300"
                         asChild
                       >
                         <a

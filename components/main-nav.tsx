@@ -49,58 +49,82 @@ export function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-
-        {/* Who We Serve */}
         <NavigationMenuItem>
-          <Link href="/who-we-serve" legacyBehavior passHref>
+          <Link href="/pricing" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
                 "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
               )}
             >
-              Who We Serve
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        {/* Why AI */}
-        <NavigationMenuItem>
-          <Link href="/why-ai" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
-              )}
-            >
-              Why AI
+              Pricing
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
-        {/* About */}
+        {/* About Dropdown */}
         <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
-              )}
-            >
-              About Us
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/blog" legacyBehavior passHref>
-            <NavigationMenuLink
-              className={cn(
-                navigationMenuTriggerStyle(),
-                "text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3"
-              )}
-            >
-              Blog
-            </NavigationMenuLink>
-          </Link>
+          <NavigationMenuTrigger className="text-gray-700 hover:text-[#005DF2] bg-transparent hover:bg-transparent focus:bg-transparent px-3">
+            About
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[300px] gap-4 p-4">
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/about"
+                    className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="font-medium text-gray-900">Who We Are</div>
+                    <div className="text-gray-600 text-sm">
+                      Learn about our mission and team
+                    </div>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/who-we-serve"
+                    className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="font-medium text-gray-900">
+                      Who We Serve
+                    </div>
+                    <div className="text-gray-600 text-sm">
+                      Industries and organizations we help
+                    </div>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/why-ai"
+                    className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="font-medium text-gray-900">Why AI</div>
+                    <div className="text-gray-600 text-sm">
+                      How AI transforms procurement
+                    </div>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/blog"
+                    className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="font-medium text-gray-900">Blog</div>
+                    <div className="text-gray-600 text-sm">
+                      Latest insights and updates
+                    </div>
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
 
         {/* Demo Button */}
@@ -108,9 +132,21 @@ export function MainNav() {
           <NavigationMenuLink asChild>
             <Link
               href={DEMO_BOOKING_URL}
-              className={buttonVariants({ size: "sm" })}
+              className={buttonVariants({ size: "sm", variant: "default" })}
             >
               Book a Demo
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        {/* Get Started Button */}
+        <NavigationMenuItem className="pl-2">
+          <NavigationMenuLink asChild>
+            <Link
+              href="/pricing"
+              className={buttonVariants({ size: "sm", variant: "outline" })}
+            >
+              Get Started
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

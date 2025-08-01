@@ -445,9 +445,23 @@ export default function NonProfitPage() {
                       and doubled their community impact through efficient
                       procurement processes.
                     </p>
-                    <div className="inline-block">
+                    <div className="flex flex-col sm:flex-row gap-4">
                       <Button
                         className="bg-white text-[#005DF2] hover:bg-gray-100 text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+                        asChild
+                      >
+                        <a
+                          href={DEMO_BOOKING_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center"
+                        >
+                          Book a Demo
+                          <ChevronRight className="ml-2" size={20} />
+                        </a>
+                      </Button>
+                      <Button
+                        className="bg-transparent border border-white text-white hover:bg-white hover:text-[#005DF2] text-lg px-8 py-6 rounded-lg transition-all duration-300"
                         asChild
                       >
                         <a

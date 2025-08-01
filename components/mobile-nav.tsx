@@ -86,13 +86,17 @@ export function MobileNav() {
                   >
                     Blog
                   </a>
+                  <a
+                    href="/pricing"
+                    className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Pricing
+                  </a>
                 </div>
 
-                <div className="border-t border-gray-100 pt-4">
-                  <Button
-                    className="w-full bg-[#005DF2] hover:bg-[#004acf] text-white"
-                    asChild
-                  >
+                <div className="border-t w-full border-gray-100 pt-4 space-y-3">
+                  <Button className="w-full" variant="default" asChild>
                     <a
                       href={DEMO_BOOKING_URL}
                       target="_blank"
@@ -100,6 +104,12 @@ export function MobileNav() {
                     >
                       Book a Demo
                     </a>
+                  </Button>
+                  <Button
+                    className="w-full border-gray-300 text-gray-900 hover:bg-gray-100 bg-white"
+                    asChild
+                  >
+                    <a href="/pricing">Get Started</a>
                   </Button>
                 </div>
               </div>
