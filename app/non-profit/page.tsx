@@ -456,7 +456,7 @@ export default function NonProfitPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Book a Non-Profit Demo
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>

@@ -96,7 +96,7 @@ export default function FinancialServicesPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Book a Financial Services Demo
+                    Get Started
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -460,7 +460,7 @@ export default function FinancialServicesPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Book a Financial Services Demo
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>

@@ -95,7 +95,7 @@ export default function TechnologySaasTechPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Start Your Tech RFP
+                    Get Started
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -578,7 +578,7 @@ export default function TechnologySaasTechPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Book a Demo
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>

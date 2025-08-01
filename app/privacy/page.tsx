@@ -200,7 +200,39 @@ export default function PrivacyPolicy() {
               accordingly. We recommend reviewing this page periodically.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4">10. Contact Us</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4">
+              10. Platform Recommendations Disclaimer
+            </h2>
+            <p>
+              {COMPANY_NAME} provides AI-powered recommendations and scoring
+              based on vendor responses to help streamline your RFP process.
+              However, it is important to note that:
+            </p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>
+                Our platform provides recommendations based on vendor responses
+                and specified criteria
+              </li>
+              <li>
+                We strongly advise issuers to personally evaluate vendor
+                candidates for optimal vendor selection
+              </li>
+              <li>
+                Final vendor selection decisions should be made based on your
+                organization's specific needs, requirements, and due diligence
+              </li>
+              <li>
+                Our recommendations are tools to assist in the decision-making
+                process but should not be the sole basis for vendor selection
+              </li>
+            </ul>
+            <p>
+              {COMPANY_NAME} is designed to enhance and streamline your
+              procurement process, but ultimate responsibility for vendor
+              selection remains with your organization.
+            </p>
+
+            <h2 className="text-2xl font-bold mt-8 mb-4">11. Contact Us</h2>
             <p>
               For any questions or concerns about this Privacy Policy or your
               data, please reach out to us at:

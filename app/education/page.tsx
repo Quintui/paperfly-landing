@@ -97,7 +97,7 @@ export default function EducationPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Try the Campus Edition
+                    Get Started
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -580,7 +580,7 @@ export default function EducationPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Try the Campus Edition
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>

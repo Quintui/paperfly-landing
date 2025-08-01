@@ -99,7 +99,7 @@ export default function HealthcarePage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Book a Healthcare Demo
+                    Get Started
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -580,7 +580,7 @@ export default function HealthcarePage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Book a Healthcare Demo
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>

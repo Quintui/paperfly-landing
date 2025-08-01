@@ -96,7 +96,7 @@ export default function GovernmentPage() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Book a Government Demo
+                    Get Started
                     <motion.span
                       initial={{ x: 0 }}
                       animate={{ x: [0, 5, 0] }}
@@ -461,7 +461,7 @@ export default function GovernmentPage() {
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
-                          Book a Government Demo
+                          Get Started
                           <ChevronRight className="ml-2" size={20} />
                         </a>
                       </Button>
