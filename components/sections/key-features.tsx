@@ -163,7 +163,7 @@ export const KeyFeatures = () => {
       label: "Time Savings",
       description:
         "Average time saved on RFP authoring and review cycles compared to manual processes.",
-      color: "#10B981",
+      color: "#005DF2",
     },
     {
       icon: <TrendingUp size={28} />,
@@ -171,7 +171,7 @@ export const KeyFeatures = () => {
       label: "Faster Decisions",
       description:
         "Speed up vendor selection with built-in scoring and side-by-side comparison tools.",
-      color: "#F59E0B",
+      color: "#004acf",
     },
     {
       icon: <FileCheck size={28} />,
@@ -179,7 +179,7 @@ export const KeyFeatures = () => {
       label: "Template Consistency",
       description:
         "Perfect formatting across all export formats including Word, PDF, and Google Docs.",
-      color: "#005DF2",
+      color: "#0052d4",
     },
   ];
 
@@ -190,7 +190,7 @@ export const KeyFeatures = () => {
     >
       {/* Background decorative elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
-      <div className="absolute bottom-20 left-10 w-64 h-64 bg-green-100 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-20"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -208,7 +208,7 @@ export const KeyFeatures = () => {
             whileInView={{ width: "6rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="h-1.5 bg-gradient-to-r from-[#005DF2] to-[#10B981] mx-auto mb-8 rounded-full"
+            className="h-1.5 bg-gradient-to-r from-[#005DF2] to-[#004acf] mx-auto mb-8 rounded-full"
           ></motion.div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Real results from organizations that chose clarity over complexity
@@ -262,24 +262,24 @@ export const KeyFeatures = () => {
                 percentage={60}
                 label="Review & Revision"
                 delay={0.4}
-                color="#10B981"
+                color="#004acf"
               />
               <ProgressBar
                 percentage={85}
                 label="Vendor Communication"
                 delay={0.6}
-                color="#F59E0B"
+                color="#0052d4"
               />
               <ProgressBar
                 percentage={90}
                 label="Scoring & Evaluation"
                 delay={0.8}
-                color="#8B5CF6"
+                color="#003ba3"
               />
             </div>
 
             <div className="flex flex-col justify-center">
-              <div className="bg-gradient-to-br from-[#005DF2]/10 to-[#10B981]/10 rounded-2xl p-8 text-center">
+              <div className="bg-gradient-to-br from-[#005DF2]/10 to-[#004acf]/10 rounded-2xl p-8 text-center">
                 <div className="mb-6">
                   <div className="text-5xl font-bold text-[#005DF2] mb-2">
                     <AnimatedCounter target={32} />
@@ -292,13 +292,13 @@ export const KeyFeatures = () => {
 
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#10B981]">
+                    <div className="text-2xl font-bold text-[#004acf]">
                       <AnimatedCounter target={94} suffix="%" />
                     </div>
                     <div className="text-xs text-gray-600">Accuracy Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#F59E0B]">
+                    <div className="text-2xl font-bold text-[#0052d4]">
                       <AnimatedCounter target={67} suffix="%" />
                     </div>
                     <div className="text-xs text-gray-600">Response Rate</div>
@@ -317,8 +317,8 @@ export const KeyFeatures = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-col sm:flex-row gap-2 items-center bg-gradient-to-r from-[#005DF2]/10 to-[#10B981]/10 text-gray-700 font-medium px-6 py-3 rounded-full border border-gray-200">
-            <CheckCircle2 size={16} className="mr-2 text-[#10B981] shrink-0" />
+          <div className="inline-flex flex-col sm:flex-row gap-2 items-center bg-gradient-to-r from-[#005DF2]/10 to-[#004acf]/10 text-gray-700 font-medium px-6 py-3 rounded-full border border-gray-200">
+            <CheckCircle2 size={16} className="mr-2 text-[#005DF2] shrink-0" />
             Data reflects early customer results - actual savings vary by
             organization maturity
           </div>

@@ -201,7 +201,7 @@ export const WhatWeDo = () => {
             whileInView={{ width: "8rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="h-1.5 bg-gradient-to-r from-[#005DF2] to-[#10B981] mx-auto mb-8 rounded-full"
+            className="h-1.5 bg-gradient-to-r from-[#005DF2] to-[#004acf] mx-auto mb-8 rounded-full"
           ></motion.div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From procurement pain points to streamlined success - see how we
@@ -263,7 +263,7 @@ export const WhatWeDo = () => {
                   initial={{ scale: 0 }}
                   animate={centerArrowInView ? { scale: 1 } : {}}
                   transition={{ duration: 0.4, delay: 0.8 }}
-                  className="absolute inset-4 bg-gradient-to-r from-[#005DF2] to-[#10B981] rounded-full flex items-center justify-center"
+                  className="absolute inset-4 bg-gradient-to-r from-[#005DF2] to-[#004acf] rounded-full flex items-center justify-center"
                 >
                   <Sparkles className="text-white" size={24} />
                 </motion.div>
@@ -310,13 +310,13 @@ export const WhatWeDo = () => {
             className="space-y-8 "
           >
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                <CheckCircle2 className="text-green-600" size={24} />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                <CheckCircle2 className="text-[#005DF2]" size={24} />
               </div>
-              <h3 className="text-2xl font-bold text-green-900 mb-2">
+              <h3 className="text-2xl font-bold text-[#005DF2] mb-2">
                 With Paperfly
               </h3>
-              <p className="text-green-700">
+              <p className="text-[#004acf]">
                 Streamlined, intelligent, results-driven
               </p>
             </div>
@@ -343,7 +343,7 @@ export const WhatWeDo = () => {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <div className="bg-gradient-to-r from-[#005DF2]/10 via-white to-[#10B981]/10 rounded-3xl p-8 md:p-12 border border-gray-200 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-[#005DF2]/10 via-white to-[#004acf]/10 rounded-3xl p-8 md:p-12 border border-gray-200 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
               The Result: Procurement Excellence
             </h3>
@@ -355,13 +355,13 @@ export const WhatWeDo = () => {
                 <div className="text-gray-700">Faster Process</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#10B981] mb-2">
+                <div className="text-3xl font-bold text-[#004acf] mb-2">
                   90%
                 </div>
                 <div className="text-gray-700">Better Responses</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#F59E0B] mb-2">
+                <div className="text-3xl font-bold text-[#0052d4] mb-2">
                   100%
                 </div>
                 <div className="text-gray-700">Audit Ready</div>
