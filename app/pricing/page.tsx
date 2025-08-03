@@ -39,6 +39,7 @@ const plan = {
   period: "per RFP/RFI project",
   buttonText: "Get Started",
   buttonVariant: "primary" as const,
+  buttonLink: DASHBOARD_URL,
   features: [
     { name: "2-minute RFP/RFI generation with built-in editor", icon: Clock },
     { name: "Smart vendor response forms", icon: FileText },

@@ -1,7 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -20,6 +20,7 @@ interface PricingCardProps {
     features: { name: string; icon: React.ElementType }[];
     buttonText: string;
     buttonVariant: "primary" | "outline";
+    buttonLink: string;
     footer?: {
       text: string;
       link?: {
@@ -113,15 +114,19 @@ export function PricingCard({ plan }: PricingCardProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.5 }}
           >
-            <Button
+            <a
+              href={plan.buttonLink}
               className={cn(
+                buttonVariants({
+                  variant:
+                    plan.buttonVariant === "primary" ? "default" : "outline",
+                }),
                 "w-full transition-all duration-200",
                 plan.buttonVariant === "primary" &&
                   "bg-[#005DF2] text-white hover:bg-[#0052d4]",
                 plan.buttonVariant === "outline" &&
                   "border border-gray-300 bg-white text-gray-900 hover:bg-gray-50"
               )}
-              variant={plan.buttonVariant === "primary" ? "default" : "outline"}
             >
               <span className="relative">
                 {plan.buttonText}
@@ -132,7 +137,7 @@ export function PricingCard({ plan }: PricingCardProps) {
                   transition={{ duration: 0.3 }}
                 />
               </span>
-            </Button>
+            </a>
           </motion.div>
         </div>
       </CardContent>
