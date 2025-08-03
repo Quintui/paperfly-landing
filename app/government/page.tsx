@@ -479,7 +479,7 @@ export default function GovernmentPage() {
                         asChild
                       >
                         <a
-                          href={DEMO_BOOKING_URL}
+                          href={DASHBOARD_URL}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center"
