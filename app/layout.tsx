@@ -40,13 +40,6 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js-na3.hs-scripts.com/342281824.js"
-        ></script>
       </head>
 
       <body className={inter.className}>
@@ -63,7 +56,10 @@ export default function RootLayout({
         <Script
           id="hs-script-loader"
           strategy="afterInteractive"
-          src="https://js-na3.hs-scripts.com/342281824.js"
+          type="text/javascript"
+          async
+          defer
+          src="//js-na3.hs-scripts.com/342281824.js"
         />
       </body>
     </html>
