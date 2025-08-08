@@ -41,13 +41,6 @@ export default function RootLayout({
         />
 
         <link rel="manifest" href="/site.webmanifest" />
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js-na3.hs-scripts.com/342281824.js"
-        ></script>
       </head>
 
       <body className={inter.className}>
@@ -61,6 +54,11 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </Providers>
+        <Script
+          id="hubspot-chat"
+          src="https://js-na3.hs-scripts.com/342281824.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
