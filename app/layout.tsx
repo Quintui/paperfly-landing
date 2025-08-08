@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Providers from "@/components/providers";
 
+import Script from "next/script";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -38,6 +40,13 @@ export default function RootLayout({
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-na3.hs-scripts.com/342281824.js"
+        ></script>
       </head>
 
       <body className={inter.className}>
@@ -51,6 +60,11 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </Providers>
+        <Script
+          id="hs-script-loader"
+          strategy="afterInteractive"
+          src="https://js-na3.hs-scripts.com/342281824.js"
+        />
       </body>
     </html>
   );
