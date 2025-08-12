@@ -8,7 +8,7 @@ export const DASHBOARD_URL = "https://dashboard.paperfly.app";
 
 // Company information
 export const COMPANY_NAME = "Paperfly";
-export const COMPANY_EMAIL = "info@thematchengine.com";
+export const COMPANY_EMAIL = "support@paperfly.app";
 export const COMPANY_WEBSITE = "https://paperfly.app/";
 
 // Social media
