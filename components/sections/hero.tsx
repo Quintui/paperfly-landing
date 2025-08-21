@@ -30,8 +30,8 @@ export const Hero = () => {
             transition={{ duration: 0.3 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Build clearer RFPs. Pick better vendors.{" "}
-              <motion.span
+              Build clearer RFPs. Pick better vendors.
+              {/* <motion.span
                 className="text-[#005DF2] relative inline-block"
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: 1 }}
@@ -43,7 +43,7 @@ export const Hero = () => {
                   animate={{ width: "100%" }}
                   transition={{ duration: 0.3, delay: 0.3, ease: "easeOut" }}
                 />
-              </motion.span>
+              </motion.span> */}
             </h1>
           </motion.div>
 
