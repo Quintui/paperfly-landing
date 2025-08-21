@@ -81,351 +81,143 @@ const AcceleratingTechProcurement = () => {
 
         {/* Main Content */}
         <main className="max-w-4xl mx-auto px-6 py-12">
-          {/* Introduction */}
-          <div className="prose prose-xl max-w-none mb-16">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60">
-              <p className="text-slate-700 leading-relaxed mb-6">
-                Tech teams need a streamlined approach that doesn't sacrifice
-                thoroughness for speed. The pressure to move fast in technology
-                companies often leads to rushed decisions that can have
-                long-term consequences for security, compliance, and operational
-                efficiency.
+          <article className="prose prose-lg lg:prose-xl max-w-none">
+            <p>
+              Tech teams need a streamlined approach that doesn't sacrifice
+              thoroughness for speed. The pressure to move fast in technology
+              companies often leads to rushed decisions that can have long-term
+              consequences for security, compliance, and operational efficiency.
+            </p>
+            <p>
+              Rapid growth and agile operations mean that tech companies often use
+              rushed or informal RFPs, resulting in vendor mismatches and gaps in
+              security or compliance checks. This approach puts critical
+              operations at risk.
+            </p>
+            <blockquote>
+              <p>Paperfly provides the speed and precision tech companies need.</p>
+            </blockquote>
+
+            <h2>Frequent Tech Procurement Challenges</h2>
+            <p>The obstacles that slow down tech procurement teams.</p>
+
+            <h3>Short Timelines with Poorly Defined Scoring Criteria</h3>
+            <p>
+              Tech companies often operate under tight deadlines, leading to
+              rushed RFP processes with unclear evaluation criteria. This results
+              in subjective decision-making and vendor selections that don't align
+              with long-term business objectives.
+            </p>
+
+            <h3>Misalignment Between Cross-Functional Teams</h3>
+            <p>
+              Product, IT, security, and procurement teams often have different
+              priorities and timelines. This misalignment leads to conflicting
+              requirements, delayed decisions, and vendor selections that don't
+              meet all stakeholders' needs.
+            </p>
+
+            <h3>Inconsistent or Incomplete RFP Documentation</h3>
+            <p>
+              Rushed processes often result in unclear requirements, missing
+              security specifications, and incomplete vendor evaluation criteria.
+              This leads to confusion, inconsistent responses, and poor vendor
+              matches that don't meet technical or business needs.
+            </p>
+
+            <h2>Why Current Practices Fall Short</h2>
+            <p>Rushed processes that compromise tech procurement quality.</p>
+            <ul>
+              <li>Rushed RFPs skip critical security and compliance checks</li>
+              <li>
+                Informal processes lead to vendor mismatches and poor selections
+              </li>
+              <li>
+                Lack of standardized evaluation criteria results in subjective
+                decisions
+              </li>
+              <li>
+                Critical operations are put at risk due to inadequate vendor
+                assessment
+              </li>
+              <li>Cross-functional misalignment delays procurement decisions</li>
+              <li>
+                Incomplete documentation leads to unclear vendor requirements
+              </li>
+            </ul>
+
+            <h2>The Paperfly Solution</h2>
+            <p>Fast, precise tools designed for tech procurement needs.</p>
+
+            <h3>Quick-Start, Customizable Templates</h3>
+            <p>
+              Pre-built templates specifically designed for tech procurement that
+              can be quickly customized and deployed. These templates include all
+              necessary sections for security, compliance, scalability, and
+              technical requirements while maintaining speed.
+            </p>
+            <blockquote>
+              <p>
+                <strong>Speed Without Sacrifice:</strong> Templates are designed
+                for rapid deployment while ensuring comprehensive coverage.
               </p>
-              <p className="text-slate-700 leading-relaxed mb-6">
-                Rapid growth and agile operations mean that tech companies often
-                use rushed or informal RFPs, resulting in vendor mismatches and
-                gaps in security or compliance checks. This approach puts
-                critical operations at risk.
+            </blockquote>
+
+            <h3>Clear, Built-In Scoring Rubrics</h3>
+            <p>
+              Comprehensive evaluation frameworks that address security,
+              compliance, scalability, and technical requirements. These rubrics
+              ensure objective, consistent vendor assessment while maintaining the
+              speed tech companies need.
+            </p>
+            <blockquote>
+              <p>
+                <strong>Objective Evaluation:</strong> Built-in criteria ensure
+                consistent, thorough vendor assessment.
               </p>
-              <div className="flex items-center space-x-3 p-4 bg-gradient-to-r from-[#005DF2]/5 to-[#0048C1]/5 rounded-xl border-l-4 border-[#005DF2]">
-                <Rocket className="w-5 h-5 text-[#005DF2]" />
-                <p className="font-semibold text-[#005DF2] m-0">
-                  Paperfly provides the speed and precision tech companies need.
-                </p>
-              </div>
-            </div>
-          </div>
+            </blockquote>
 
-          {/* Frequent Challenges Section */}
-          <section className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                Frequent Tech Procurement Challenges
-              </h2>
-              <p className="text-xl text-slate-600">
-                The obstacles that slow down tech procurement teams
+            <h3>Integrated Collaboration Features</h3>
+            <p>
+              Real-time collaboration tools that bring product, IT, security, and
+              procurement teams together in a unified workspace. This ensures
+              alignment, speeds up decision-making, and maintains the quality
+              standards tech companies require.
+            </p>
+            <blockquote>
+              <p>
+                <strong>Cross-Functional Alignment:</strong> Unified workspace
+                ensures all teams work together efficiently.
               </p>
-            </div>
+            </blockquote>
 
-            <div className="grid gap-8">
-              {/* Challenge 1 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <Target className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Short Timelines with Poorly Defined Scoring Criteria
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Tech companies often operate under tight deadlines,
-                        leading to rushed RFP processes with unclear evaluation
-                        criteria. This results in subjective decision-making and
-                        vendor selections that don't align with long-term
-                        business objectives.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Why This Matters for Tech Companies</h2>
+            <p>
+              Tech companies can effectively balance speed and quality in
+              procurement by using Paperfly, ensuring that vendor selections are
+              quick, precise, and secure. This approach directly impacts
+              operational efficiency, security posture, and competitive advantage
+              in the fast-moving technology landscape.
+            </p>
 
-              {/* Challenge 2 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <Users className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Misalignment Between Cross-Functional Teams
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Product, IT, security, and procurement teams often have
-                        different priorities and timelines. This misalignment
-                        leads to conflicting requirements, delayed decisions,
-                        and vendor selections that don't meet all stakeholders'
-                        needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Conclusion</h2>
+            <p>
+              Technology companies don't have to choose between speed and quality
+              in procurement. By embracing modern, streamlined tools like
+              Paperfly, tech teams can accelerate their procurement processes
+              while maintaining the thoroughness required for security,
+              compliance, and optimal vendor selection.
+            </p>
+            <p>
+              The key is moving away from rushed, informal processes and toward
+              structured, automated solutions that prioritize both speed and
+              precision. When tech procurement teams have the right tools, they
+              can focus on what matters most: building competitive advantages
+              through strategic vendor partnerships that support rapid growth and
+              innovation.
+            </p>
 
-              {/* Challenge 3 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <AlertTriangle className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Inconsistent or Incomplete RFP Documentation
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Rushed processes often result in unclear requirements,
-                        missing security specifications, and incomplete vendor
-                        evaluation criteria. This leads to confusion,
-                        inconsistent responses, and poor vendor matches that
-                        don't meet technical or business needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Why Current Practices Fall Short */}
-          <section className="mb-16">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-12 border border-red-200/50">
-              <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                  Why Current Practices Fall Short
-                </h2>
-                <p className="text-xl text-slate-600">
-                  Rushed processes that compromise tech procurement quality
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Rushed RFPs skip critical security and compliance checks
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Informal processes lead to vendor mismatches and poor
-                      selections
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Lack of standardized evaluation criteria results in
-                      subjective decisions
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Critical operations are put at risk due to inadequate
-                      vendor assessment
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Cross-functional misalignment delays procurement decisions
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Incomplete documentation leads to unclear vendor
-                      requirements
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* The Paperfly Solution */}
-          <section className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                The Paperfly Solution
-              </h2>
-              <p className="text-xl text-slate-600">
-                Fast, precise tools designed for tech procurement needs
-              </p>
-            </div>
-
-            <div className="grid gap-8">
-              {/* Solution 1 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <Rocket className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Quick-Start, Customizable Templates
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Pre-built templates specifically designed for tech
-                        procurement that can be quickly customized and deployed.
-                        These templates include all necessary sections for
-                        security, compliance, scalability, and technical
-                        requirements while maintaining speed.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            Speed Without Sacrifice
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Templates are designed for rapid deployment while
-                          ensuring comprehensive coverage
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Solution 2 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Clear, Built-In Scoring Rubrics
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Comprehensive evaluation frameworks that address
-                        security, compliance, scalability, and technical
-                        requirements. These rubrics ensure objective, consistent
-                        vendor assessment while maintaining the speed tech
-                        companies need.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            Objective Evaluation
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Built-in criteria ensure consistent, thorough vendor
-                          assessment
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Solution 3 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <MessageSquare className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Integrated Collaboration Features
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Real-time collaboration tools that bring product, IT,
-                        security, and procurement teams together in a unified
-                        workspace. This ensures alignment, speeds up
-                        decision-making, and maintains the quality standards
-                        tech companies require.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            Cross-Functional Alignment
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Unified workspace ensures all teams work together
-                          efficiently
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Why It Matters */}
-          <section className="mb-16">
-            <div className="relative overflow-hidden bg-gradient-to-br from-[#005DF2] via-[#0048C1] to-[#003A9B] rounded-3xl p-12 text-white">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
-              <div className="relative">
-                <div className="flex items-center space-x-3 mb-6">
-                  <Cpu className="w-8 h-8" />
-                  <h3 className="text-3xl font-bold">
-                    Why This Matters for Tech Companies
-                  </h3>
-                </div>
-                <p className="text-xl leading-relaxed text-blue-100">
-                  Tech companies can effectively balance speed and quality in
-                  procurement by using Paperfly, ensuring that vendor selections
-                  are quick, precise, and secure. This approach directly impacts
-                  operational efficiency, security posture, and competitive
-                  advantage in the fast-moving technology landscape.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Conclusion */}
-          <section className="mb-16">
-            <div className="bg-white rounded-3xl p-12 shadow-sm border border-slate-200/60">
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">
-                Conclusion
-              </h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Technology companies don't have to choose between speed and
-                quality in procurement. By embracing modern, streamlined tools
-                like Paperfly, tech teams can accelerate their procurement
-                processes while maintaining the thoroughness required for
-                security, compliance, and optimal vendor selection.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                The key is moving away from rushed, informal processes and
-                toward structured, automated solutions that prioritize both
-                speed and precision. When tech procurement teams have the right
-                tools, they can focus on what matters most: building competitive
-                advantages through strategic vendor partnerships that support
-                rapid growth and innovation.
-              </p>
-            </div>
-          </section>
-
-          {/* CTA Section */}
-          <section className="mb-16">
-            <div className="text-center bg-white rounded-3xl p-12 shadow-sm border border-slate-200/60">
+            <div className="not-prose text-center my-16">
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
                 Ready to accelerate your tech procurement process?
               </h3>
@@ -445,7 +237,7 @@ const AcceleratingTechProcurement = () => {
                 </a>
               </div>
             </div>
-          </section>
+          </article>
         </main>
       </div>
       <Footer />

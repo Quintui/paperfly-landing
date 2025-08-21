@@ -81,358 +81,165 @@ const SimplifyingHealthcareRfps = () => {
 
         {/* Main Content */}
         <main className="max-w-4xl mx-auto px-6 py-12">
-          {/* Introduction */}
-          <div className="prose prose-xl max-w-none mb-16">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60">
-              <p className="text-slate-700 leading-relaxed mb-6">
-                Yet, many organizations still rely on outdated methods, which
-                amplify risks and confusion. The stakes are incredibly high in
-                healthcare procurement—every decision impacts patient care, data
-                security, and regulatory compliance.
+          <article className="prose prose-lg lg:prose-xl max-w-none">
+            <p>
+              Yet, many organizations still rely on outdated methods, which
+              amplify risks and confusion. The stakes are incredibly high in
+              healthcare procurement—every decision impacts patient care, data
+              security, and regulatory compliance.
+            </p>
+            <p>
+              Healthcare organizations often rely on fragmented processes and
+              outdated tools, causing stakeholder misalignment and potential
+              regulatory oversights. These outdated workflows lead to
+              inefficiencies, compliance risks, and poor vendor selection.
+            </p>
+            <blockquote>
+              <p>
+                Paperfly provides the specialized solution healthcare
+                organizations need.
               </p>
-              <p className="text-slate-700 leading-relaxed mb-6">
-                Healthcare organizations often rely on fragmented processes and
-                outdated tools, causing stakeholder misalignment and potential
-                regulatory oversights. These outdated workflows lead to
-                inefficiencies, compliance risks, and poor vendor selection.
+            </blockquote>
+
+            <h2>Critical Healthcare RFP Challenges</h2>
+            <p>The unique obstacles that healthcare procurement teams face.</p>
+
+            <h3>Diverse Stakeholders from Multiple Teams</h3>
+            <p>
+              Healthcare procurement involves clinical teams, IT departments,
+              legal counsel, and compliance officers—each with different
+              priorities, timelines, and requirements. Coordinating input from
+              all these stakeholders while maintaining clinical standards and
+              regulatory compliance is a significant challenge.
+            </p>
+
+            <h3>Heavy Burden of HIPAA Compliance and Documentation</h3>
+            <p>
+              Every healthcare RFP must address HIPAA compliance, data security
+              requirements, and meticulous documentation standards. The
+              complexity of these requirements often leads to incomplete or
+              unclear specifications that fail to protect patient data and meet
+              regulatory standards.
+            </p>
+
+            <h3>Unclear or Incomplete RFP Scopes</h3>
+            <p>
+              When healthcare RFPs lack clarity or completeness, they result in
+              suboptimal vendor matches that don't meet clinical needs or
+              compliance requirements. This leads to costly rework, delayed
+              implementations, and potential risks to patient care and data
+              security.
+            </p>
+
+            <h2>The Root of the Problem</h2>
+            <p>
+              Fragmented processes that compromise healthcare procurement goals.
+            </p>
+            <ul>
+              <li>
+                Fragmented processes create misalignment between clinical, IT,
+                and compliance teams
+              </li>
+              <li>
+                Outdated tools fail to address the unique complexity of
+                healthcare requirements
+              </li>
+              <li>
+                Manual processes increase the risk of regulatory oversights and
+                compliance violations
+              </li>
+              <li>
+                Inefficient workflows delay critical procurement decisions and
+                vendor implementations
+              </li>
+              <li>
+                Poor vendor selection compromises patient care quality and data
+                security
+              </li>
+              <li>
+                Lack of standardization results in inconsistent evaluation and
+                selection processes
+              </li>
+            </ul>
+
+            <h2>The Paperfly Solution</h2>
+            <p>
+              Specialized tools designed for healthcare procurement complexity.
+            </p>
+
+            <h3>Tailored, HIPAA-Compliant Templates</h3>
+            <p>
+              Pre-built templates specifically designed for healthcare
+              procurement that capture comprehensive requirements while
+              ensuring HIPAA compliance and regulatory adherence. These
+              templates include all necessary sections for clinical, technical,
+              and compliance needs.
+            </p>
+            <blockquote>
+              <p>
+                <strong>HIPAA Compliance Built-In:</strong> Templates
+                automatically include required HIPAA language, data security
+                requirements, and compliance sections.
               </p>
-              <div className="flex items-center space-x-3 p-4 bg-gradient-to-r from-[#005DF2]/5 to-[#0048C1]/5 rounded-xl border-l-4 border-[#005DF2]">
-                <Heart className="w-5 h-5 text-[#005DF2]" />
-                <p className="font-semibold text-[#005DF2] m-0">
-                  Paperfly provides the specialized solution healthcare
-                  organizations need.
-                </p>
-              </div>
-            </div>
-          </div>
+            </blockquote>
 
-          {/* Critical Challenges Section */}
-          <section className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                Critical Healthcare RFP Challenges
-              </h2>
-              <p className="text-xl text-slate-600">
-                The unique obstacles that healthcare procurement teams face
+            <h3>Centralized, Collaborative Workspace</h3>
+            <p>
+              A unified platform that brings clinical, IT, and compliance teams
+              together in real-time collaboration. This eliminates silos,
+              ensures all stakeholders are aligned, and maintains the integrity
+              of healthcare requirements throughout the process.
+            </p>
+            <blockquote>
+              <p>
+                <strong>Team Alignment:</strong> Real-time collaboration ensures
+                clinical, IT, and compliance teams work together seamlessly.
               </p>
-            </div>
+            </blockquote>
 
-            <div className="grid gap-8">
-              {/* Challenge 1 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <Users className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Diverse Stakeholders from Multiple Teams
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Healthcare procurement involves clinical teams, IT
-                        departments, legal counsel, and compliance officers—each
-                        with different priorities, timelines, and requirements.
-                        Coordinating input from all these stakeholders while
-                        maintaining clinical standards and regulatory compliance
-                        is a significant challenge.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Challenge 2 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <Lock className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Heavy Burden of HIPAA Compliance and Documentation
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Every healthcare RFP must address HIPAA compliance, data
-                        security requirements, and meticulous documentation
-                        standards. The complexity of these requirements often
-                        leads to incomplete or unclear specifications that fail
-                        to protect patient data and meet regulatory standards.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Challenge 3 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#005DF2]/5 to-transparent rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#005DF2] to-[#0048C1] rounded-xl flex items-center justify-center">
-                      <AlertTriangle className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Unclear or Incomplete RFP Scopes
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        When healthcare RFPs lack clarity or completeness, they
-                        result in suboptimal vendor matches that don't meet
-                        clinical needs or compliance requirements. This leads to
-                        costly rework, delayed implementations, and potential
-                        risks to patient care and data security.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* The Root of the Problem */}
-          <section className="mb-16">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-12 border border-red-200/50">
-              <div className="text-center mb-8">
-                <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                  The Root of the Problem
-                </h2>
-                <p className="text-xl text-slate-600">
-                  Fragmented processes that compromise healthcare procurement
-                  goals
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Fragmented processes create misalignment between clinical,
-                      IT, and compliance teams
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Outdated tools fail to address the unique complexity of
-                      healthcare requirements
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Manual processes increase the risk of regulatory
-                      oversights and compliance violations
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Inefficient workflows delay critical procurement decisions
-                      and vendor implementations
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Poor vendor selection compromises patient care quality and
-                      data security
-                    </p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-700">
-                      Lack of standardization results in inconsistent evaluation
-                      and selection processes
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* The Paperfly Solution */}
-          <section className="mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                The Paperfly Solution
-              </h2>
-              <p className="text-xl text-slate-600">
-                Specialized tools designed for healthcare procurement complexity
+            <h3>Automated Vendor Q&A and Evaluation Rubrics</h3>
+            <p>
+              Intelligent forms that ensure vendors provide consistent,
+              comparable responses, along with customizable evaluation rubrics
+              that enable thorough, objective assessment of
+              healthcare-specific requirements and capabilities.
+            </p>
+            <blockquote>
+              <p>
+                <strong>Comprehensive Assessment:</strong> Customizable rubrics
+                ensure thorough evaluation of clinical, technical, and
+                compliance requirements.
               </p>
-            </div>
+            </blockquote>
 
-            <div className="grid gap-8">
-              {/* Solution 1 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <Shield className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Tailored, HIPAA-Compliant Templates
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Pre-built templates specifically designed for healthcare
-                        procurement that capture comprehensive requirements
-                        while ensuring HIPAA compliance and regulatory
-                        adherence. These templates include all necessary
-                        sections for clinical, technical, and compliance needs.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            HIPAA Compliance Built-In
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Templates automatically include required HIPAA
-                          language, data security requirements, and compliance
-                          sections
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Why This Matters for Healthcare</h2>
+            <p>
+              With Paperfly, healthcare organizations can dramatically
+              streamline their RFP process, ensuring clarity, regulatory
+              compliance, and optimal vendor selection. This approach directly
+              impacts patient care quality, data security, and operational
+              efficiency—critical factors in healthcare delivery.
+            </p>
 
-              {/* Solution 2 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <MessageSquare className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Centralized, Collaborative Workspace
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        A unified platform that brings clinical, IT, and
-                        compliance teams together in real-time collaboration.
-                        This eliminates silos, ensures all stakeholders are
-                        aligned, and maintains the integrity of healthcare
-                        requirements throughout the process.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            Team Alignment
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Real-time collaboration ensures clinical, IT, and
-                          compliance teams work together seamlessly
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Conclusion</h2>
+            <p>
+              Healthcare procurement is uniquely complex, but it doesn't have to
+              be overwhelming. By embracing modern, specialized tools like
+              Paperfly, healthcare organizations can overcome the challenges of
+              stakeholder coordination, HIPAA compliance, and vendor selection
+              while maintaining the highest standards of patient care and data
+              security.
+            </p>
+            <p>
+              The key is moving away from fragmented, manual processes and
+              toward integrated, automated solutions that prioritize clinical
+              needs, regulatory compliance, and operational efficiency. When
+              healthcare procurement teams have the right tools, they can focus
+              on what matters most: delivering exceptional care to patients
+              through effective partnerships with the right vendors.
+            </p>
 
-              {/* Solution 3 */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-200"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-sm border border-emerald-200/60 hover:shadow-lg transition-all duration-200">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                        Automated Vendor Q&A and Evaluation Rubrics
-                      </h3>
-                      <p className="text-slate-600 mb-6 leading-relaxed">
-                        Intelligent forms that ensure vendors provide
-                        consistent, comparable responses, along with
-                        customizable evaluation rubrics that enable thorough,
-                        objective assessment of healthcare-specific requirements
-                        and capabilities.
-                      </p>
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 p-4 rounded-xl border border-emerald-200/50">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <CheckCircle className="w-4 h-4 text-emerald-600" />
-                          <span className="font-semibold text-emerald-800">
-                            Comprehensive Assessment
-                          </span>
-                        </div>
-                        <p className="text-slate-700 text-sm">
-                          Customizable rubrics ensure thorough evaluation of
-                          clinical, technical, and compliance requirements
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Why It Matters */}
-          <section className="mb-16">
-            <div className="relative overflow-hidden bg-gradient-to-br from-[#005DF2] via-[#0048C1] to-[#003A9B] rounded-3xl p-12 text-white">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
-              <div className="relative">
-                <div className="flex items-center space-x-3 mb-6">
-                  <Heart className="w-8 h-8" />
-                  <h3 className="text-3xl font-bold">
-                    Why This Matters for Healthcare
-                  </h3>
-                </div>
-                <p className="text-xl leading-relaxed text-blue-100">
-                  With Paperfly, healthcare organizations can dramatically
-                  streamline their RFP process, ensuring clarity, regulatory
-                  compliance, and optimal vendor selection. This approach
-                  directly impacts patient care quality, data security, and
-                  operational efficiency—critical factors in healthcare
-                  delivery.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Conclusion */}
-          <section className="mb-16">
-            <div className="bg-white rounded-3xl p-12 shadow-sm border border-slate-200/60">
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">
-                Conclusion
-              </h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Healthcare procurement is uniquely complex, but it doesn't have
-                to be overwhelming. By embracing modern, specialized tools like
-                Paperfly, healthcare organizations can overcome the challenges
-                of stakeholder coordination, HIPAA compliance, and vendor
-                selection while maintaining the highest standards of patient
-                care and data security.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                The key is moving away from fragmented, manual processes and
-                toward integrated, automated solutions that prioritize clinical
-                needs, regulatory compliance, and operational efficiency. When
-                healthcare procurement teams have the right tools, they can
-                focus on what matters most: delivering exceptional care to
-                patients through effective partnerships with the right vendors.
-              </p>
-            </div>
-          </section>
-
-          {/* CTA Section */}
-          <section className="mb-16">
-            <div className="text-center bg-white rounded-3xl p-12 shadow-sm border border-slate-200/60">
+            <div className="not-prose text-center my-16">
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
                 Ready to transform your healthcare procurement process?
               </h3>
@@ -452,7 +259,7 @@ const SimplifyingHealthcareRfps = () => {
                 </a>
               </div>
             </div>
-          </section>
+          </article>
         </main>
       </div>
       <Footer />

@@ -104,33 +104,6 @@ export const Hero = () => {
           </motion.div>
 
           {/* Floating elements */}
-          <div className="absolute top-1/4 right-0 -mr-5 hidden lg:block">
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 0.8, x: 0 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
-              className="w-32 h-32 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-4 flex items-center justify-center"
-            >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#005DF2]">85%</div>
-                <div className="text-sm text-gray-600">Time Saved</div>
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="absolute bottom-0 left-0 -ml-5 hidden lg:block">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 0.8, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="w-32 h-32 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-4 flex items-center justify-center"
-            >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#005DF2]">3x</div>
-                <div className="text-sm text-gray-600">Faster Process</div>
-              </div>
-            </motion.div>
-          </div>
         </div>
       </div>
     </section>

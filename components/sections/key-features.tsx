@@ -193,7 +193,7 @@ export const KeyFeatures = () => {
       <div className="absolute bottom-20 left-10 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-20"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -213,22 +213,9 @@ export const KeyFeatures = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Real results from organizations that chose clarity over complexity
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Main metrics grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {metrics.map((metric, index) => (
-            <MetricCard
-              key={index}
-              icon={metric.icon}
-              value={metric.value}
-              label={metric.label}
-              description={metric.description}
-              index={index}
-              color={metric.color}
-            />
-          ))}
-        </div>
 
         {/* Interactive progress visualization */}
         <motion.div

@@ -9,7 +9,21 @@ import { Hero } from "@/components/sections/hero";
 import { KeyFeatures } from "@/components/sections/key-features";
 import { CallToAction } from "@/components/sections/call-to-action";
 import { Header } from "@/components/header";
-import { Brain, Shield, Sparkles, Zap, Timer, CheckCircle2, BarChart3, Lock, ShieldCheck, FileCheck, Network, Database, Rocket } from "lucide-react";
+import {
+  Brain,
+  Shield,
+  Sparkles,
+  Zap,
+  Timer,
+  CheckCircle2,
+  BarChart3,
+  Lock,
+  ShieldCheck,
+  FileCheck,
+  Network,
+  Database,
+  Rocket,
+} from "lucide-react";
 
 export default function Home() {
   return (

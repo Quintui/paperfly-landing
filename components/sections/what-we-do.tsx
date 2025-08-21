@@ -334,41 +334,6 @@ export const WhatWeDo = () => {
             ))}
           </motion.div>
         </div>
-
-        {/* Bottom impact summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-20 text-center"
-        >
-          <div className="bg-gradient-to-r from-[#005DF2]/10 via-white to-[#004acf]/10 rounded-3xl p-8 md:p-12 border border-gray-200 max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              The Result: Procurement Excellence
-            </h3>
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#005DF2] mb-2">
-                  40%
-                </div>
-                <div className="text-gray-700">Faster Process</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#004acf] mb-2">
-                  90%
-                </div>
-                <div className="text-gray-700">Better Responses</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-[#0052d4] mb-2">
-                  100%
-                </div>
-                <div className="text-gray-700">Audit Ready</div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
