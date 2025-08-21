@@ -25,7 +25,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { DASHBOARD_URL } from "@/lib/constants";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
-import { CallToAction } from "@/components/sections/call-to-action";
+import { CtaSection } from "@/components/sections/cta-section";
 
 const plan = {
   name: "Complete RFP/RFI Solution",
@@ -261,7 +261,7 @@ export default function Page() {
               </Accordion>
             </section>
 
-            <CallToAction />
+            <CtaSection />
             {/*             <section className="text-center bg-gray-50 rounded-3xl p-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Transform Your RFP/RFI Process in Minutes

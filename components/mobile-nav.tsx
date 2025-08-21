@@ -73,7 +73,7 @@ export function MobileNav() {
                     Why AI
                   </a>
                   <a
-                    href="/#how-it-works"
+                    href="/how-it-works"
                     className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
                     onClick={() => setIsOpen(false)}
                   >

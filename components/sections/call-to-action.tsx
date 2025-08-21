@@ -5,7 +5,12 @@ import { ChevronRight, Clock } from "lucide-react";
 import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 import { motion } from "framer-motion";
 
-export const CallToAction = () => {
+interface CallToActionSectionProps {
+  title: string;
+  description: string;
+}
+
+export const CallToActionSection = ({ title, description }: CallToActionSectionProps) => {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -32,7 +37,7 @@ export const CallToAction = () => {
                   viewport={{ once: true }}
                   className="text-3xl md:text-4xl font-bold text-white mb-6"
                 >
-                  Get Started Today
+                  {title}
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -41,8 +46,7 @@ export const CallToAction = () => {
                   viewport={{ once: true }}
                   className="text-xl text-white/90 mb-8"
                 >
-                  Ready to simplify your RFP/RFI workflow and save hours? Create
-                  RFPs and RFIs in minutes — not days.
+                  {description}
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}

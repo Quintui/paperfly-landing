@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileText, Upload, Edit, Download } from "lucide-react";
+import { Upload, Sparkles, Users, Send, BarChart3, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 // Step component with consistent styling and animations
 type StepProps = {
@@ -135,7 +137,7 @@ export const HowItWorks = () => {
           </h2>
           <div className="w-20 h-1 bg-[#005DF2] mx-auto mb-8"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Start anywhere—finish strong.
+            From disorganized notes to a compliant, vendor-ready RFP in five streamlined steps.
           </p>
         </motion.div>
 
@@ -147,48 +149,48 @@ export const HowItWorks = () => {
             {/* Step 1 */}
             <Step
               number={1}
-              title="Kick-Off"
-              description="Start from an industry template or blank slate."
-              detailText="Choose an industry-specific template or begin with a blank canvas to kick off your RFP process."
-              icon={<FileText size={24} />}
+              title="Import Your Inputs"
+              description="Upload meeting notes, requirement lists, or past RFPs. Paperfly organizes and analyzes the information into logical sections."
+              detailText="Simply drag and drop your existing documents. Our AI parses everything into a structured format, saving you hours of manual data entry."
+              icon={<Upload size={24} />}
             />
 
             {/* Step 2 */}
             <Step
               number={2}
-              title="Upload Context"
-              description="Drop in notes, slide decks, or legacy RFPs; Paperfly extracts key requirements."
-              detailText="Upload your notes, presentations, or previous RFPs—Paperfly's AI extracts the key requirements and context for you."
-              icon={<Upload size={24} />}
+              title="Generate Your Draft"
+              description="Our AI-assisted engine creates a complete, industry-specific RFP that’s fully editable and bilingual-ready."
+              detailText="In minutes, receive a comprehensive draft tailored to your industry's best practices and compliance standards, available in English, French, or both."
+              icon={<Sparkles size={24} />}
               isReversed={true}
             />
 
             {/* Step 3 */}
             <Step
               number={3}
-              title="Generate & Refine"
-              description="Auto-drafted sections + suggestions for scope, timelines, evaluation criteria."
-              detailText="Receive an auto-drafted RFP with suggested sections, scope, timelines, and evaluation criteria—ready for your review and edits."
-              icon={<Edit size={24} />}
+              title="Customize & Collaborate"
+              description="Invite colleagues to review and edit sequentially. Real-time simultaneous editing is in development and will be available soon."
+              detailText="Share a secure link with your team to gather feedback and make adjustments. All changes are tracked, ensuring a clear audit trail."
+              icon={<Users size={24} />}
             />
 
             {/* Step 4 */}
             <Step
               number={4}
-              title="Publish & Share"
-              description="Export a polished RFP and spin up a matching vendor Q&A portal."
-              detailText="Export your finalized RFP and instantly create a vendor Q&A portal that matches your document structure."
-              icon={<Download size={24} />}
+              title="Publish & Collect Responses"
+              description="Your RFP includes a secure, auto-generated vendor Q&A form link. Vendors submit answers in a consistent format that matches your RFP exactly."
+              detailText="No more messy email attachments. Vendors use a dedicated portal, ensuring all submissions are uniform and easy to compare."
+              icon={<Send size={24} />}
               isReversed={true}
             />
 
             {/* Step 5 */}
             <Step
               number={5}
-              title="Score & Decide"
-              description="Centralized rubric scoring speeds consensus and audit-ready documentation."
-              detailText="Use a centralized scoring rubric to drive consensus and generate audit-ready documentation for your decision process."
-              icon={<FileText size={24} />}
+              title="Grade, Score, and Notify"
+              description="As soon as vendor responses are submitted, Paperfly’s scoring engine grades them against your chosen rubric, assigning a percentage score out of 100."
+              detailText="Instantly see top-performing vendors and use the platform to bulk notify participants of their status, closing the loop professionally."
+              icon={<BarChart3 size={24} />}
             />
           </div>
         </div>
@@ -204,6 +206,21 @@ export const HowItWorks = () => {
             No messy spreadsheets. No mismatched documents. Just organized,
             actionable proposals.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Button asChild className="bg-[#005DF2] text-white hover:bg-[#004abf] text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+            <Link href="/how-it-works">
+              Learn More
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+          </Button>
         </motion.div>
       </div>
     </section>

@@ -3,11 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
 import { Footer } from "@/components/footer";
-import { WhatWeDo } from "@/components/sections/what-we-do";
-import { HowItWorks } from "@/components/sections/how-it-works";
 import { Hero } from "@/components/sections/hero";
-import { KeyFeatures } from "@/components/sections/key-features";
-import { CallToAction } from "@/components/sections/call-to-action";
+import { WhyPaperfly } from "@/components/sections/why-paperfly";
+import { CommonRFPChallenges } from "@/components/sections/common-rfp-challenges";
+import { IndustrySpecificProblems } from "@/components/sections/industry-specific-problems";
+import { HowItWorks } from "@/components/sections/how-it-works";
+import { FeatureSpotlight } from "@/components/sections/feature-spotlight";
+import { Faq } from "@/components/sections/faq";
+import { WhoUsesPaperfly } from "@/components/sections/who-uses-paperfly";
 import { Header } from "@/components/header";
 import {
   Brain,
@@ -24,6 +27,7 @@ import {
   Database,
   Rocket,
 } from "lucide-react";
+import { CtaSection } from "@/components/sections/cta-section";
 
 export default function Home() {
   return (
@@ -36,17 +40,16 @@ export default function Home() {
         {/* Hero Section */}
         <Hero />
 
-        {/* Key Features Section */}
-        <KeyFeatures />
-
-        {/* What We Do Section */}
-        <WhatWeDo />
-
-        {/* How It Works Section */}
+        <WhyPaperfly />
+        <CommonRFPChallenges />
+        <IndustrySpecificProblems />
         <HowItWorks />
+        <FeatureSpotlight />
+        <Faq />
+        <WhoUsesPaperfly />
 
         {/* Call to Action Section */}
-        <CallToAction />
+        <CtaSection />
         <Footer />
       </div>
     </div>

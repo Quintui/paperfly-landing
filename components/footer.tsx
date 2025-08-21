@@ -99,7 +99,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/#how-it-works"
+                    href="/how-it-works"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
                     How It Works

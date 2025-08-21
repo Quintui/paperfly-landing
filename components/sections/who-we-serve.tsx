@@ -8,6 +8,8 @@ import {
   Users,
   Briefcase,
   FileText,
+  School,
+  UtensilsCrossed,
 } from "lucide-react";
 
 export const WhoWeServe = () => {
@@ -44,7 +46,7 @@ export const WhoWeServe = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {/* Card 1: Procurement Teams (Tech/SaaS) */}
           <motion.div
             variants={cardVariants}
@@ -201,6 +203,71 @@ export const WhoWeServe = () => {
               <div className="text-center mt-4">
                 <a
                   href="/government"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 6: Higher Education */}
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            whileHover="hover"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: 0.35 }}
+            className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
+          >
+            <div className="h-2 bg-[#005DF2]"></div>
+            <div className="p-8">
+              <div className="bg-[#005DF2]/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                <School className="text-[#005DF2]" size={28} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">
+                Higher Education
+              </h3>
+              <p className="text-gray-700 text-center">
+                Navigating committee approvals and public funding requirements with transparent, auditable procurement workflows.
+              </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/higher-education"
+                  className="text-[#005DF2] underline hover:no-underline font-medium"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Card 7: Hospitality & Food Services */}
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            whileHover="hover"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: 0.4 }}
+            className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100"
+          >
+            <div className="h-2 bg-[#005DF2]"></div>
+            <div className="p-8">
+              <div className="bg-[#005DF2]/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                <UtensilsCrossed className="text-[#005DF2]" size={28} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">
+                Hospitality & Food Services
+              </h3>
+              <p className="text-gray-700 text-center">
+                Sourcing for hotels, restaurants, and events with a focus on
+                quality, compliance, and speed.
+              </p>
+              <div className="text-center mt-4">
+                <a
+                  href="/hospitality-food-services"
                   className="text-[#005DF2] underline hover:no-underline font-medium"
                 >
                   Read more

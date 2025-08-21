@@ -38,7 +38,7 @@ export function MainNav() {
       <NavigationMenuList>
         {/* How It Works */}
         <NavigationMenuItem>
-          <Link href="/#how-it-works" legacyBehavior passHref>
+          <Link href="/how-it-works" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
