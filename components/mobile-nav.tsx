@@ -66,11 +66,11 @@ export function MobileNav() {
                     Who We Serve
                   </a>
                   <a
-                    href="/why-ai"
+                    href="/ai-rfp-creation-tool"
                     className="block w-full text-left py-2 text-gray-700 hover:text-[#005DF2] transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    Why AI
+                    AI Tool
                   </a>
                   <a
                     href="/how-it-works"

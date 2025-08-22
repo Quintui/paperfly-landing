@@ -100,10 +100,10 @@ export function MainNav() {
               <li>
                 <NavigationMenuLink asChild>
                   <Link
-                    href="/why-ai"
+                    href="/ai-rfp-creation-tool"
                     className="block p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
-                    <div className="font-medium text-gray-900">Why AI</div>
+                    <div className="font-medium text-gray-900">Our AI Tool</div>
                     <div className="text-gray-600 text-sm">
                       How AI transforms procurement
                     </div>

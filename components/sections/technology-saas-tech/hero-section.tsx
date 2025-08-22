@@ -2,10 +2,9 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { DEMO_BOOKING_URL } from "@/lib/constants";
+import { DEMO_BOOKING_URL, DASHBOARD_URL } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -66,13 +65,38 @@ export function HeroSection() {
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Button
-              className="group text-md h-auto bg-[#005DF2] px-8 py-4 text-white hover:bg-[#004acf]"
+              className="bg-[#005DF2] hover:bg-[#004acf] text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
               asChild
             >
-              <Link href={DEMO_BOOKING_URL} target="_blank">
+              <a
+                href={DEMO_BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
                 Book a Demo
-                <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Link>
+                <motion.span
+                  initial={{ x: 0 }}
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{
+                    duration: 0.6,
+                    repeat: Infinity,
+                    repeatDelay: 2,
+                  }}
+                >
+                  <ChevronRight className="ml-2" size={20} />
+                </motion.span>
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              className="border-[#005DF2] text-[#005DF2] hover:bg-[#005DF2] hover:text-white text-lg px-8 py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+              asChild
+            >
+              <a href={DASHBOARD_URL} className="flex items-center">
+                Get Started
+                <ChevronRight className="ml-2" size={20} />
+              </a>
             </Button>
           </motion.div>
         </div>

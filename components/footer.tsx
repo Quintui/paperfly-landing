@@ -123,10 +123,10 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/why-ai"
+                    href="/ai-rfp-creation-tool"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
-                    Why AI
+                    Our AI Tool
                   </Link>
                 </li>
               </ul>
@@ -155,10 +155,10 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/why-ai"
+                    href="/ai-rfp-creation-tool"
                     className="text-gray-400 hover:text-[#005DF2] transition-colors"
                   >
-                    Why AI Works
+                    How AI Works
                   </Link>
                 </li>
                 {/* <li>
