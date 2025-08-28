@@ -10,7 +10,10 @@ interface CallToActionSectionProps {
   description: string;
 }
 
-export const CallToActionSection = ({ title, description }: CallToActionSectionProps) => {
+export const CallToActionSection = ({
+  title,
+  description,
+}: CallToActionSectionProps) => {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -126,10 +129,8 @@ export const CallToActionSection = ({ title, description }: CallToActionSectionP
                 >
                   <Clock className="text-white" size={24} />
                   <div>
-                    <h3 className="text-white font-bold">Save 85% of Time</h3>
-                    <p className="text-white/80">
-                      Compared to manual RFP creation
-                    </p>
+                    <h3 className="text-white font-bold">Draft RFPs in ~30 minutes</h3>
+                    <p className="text-white/80">From kickoff to first draft</p>
                   </div>
                 </motion.div>
                 <div className="bg-white/5 h-2 rounded-full mb-2 overflow-hidden">

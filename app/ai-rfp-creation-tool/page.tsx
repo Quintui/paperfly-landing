@@ -312,28 +312,24 @@ export default function WhyAIPage() {
                   title: "Save Time Without Losing Control",
                   description:
                     "Paperfly speeds up the creation process by removing busywork like formatting and section drafting, while you remain in full control of what gets published.",
-                  metric: "70% faster",
                 },
                 {
                   icon: TrendingUp,
                   title: "Improve Vendor Accuracy",
                   description:
                     "Well-structured RFPs lead to better vendor responses. By guiding vendors through a consistent Q&A form, you reduce back-and-forth and get responses that are easier to compare.",
-                  metric: "40% fewer questions",
                 },
                 {
                   icon: BarChart3,
                   title: "Standardize Scoring and Evaluation",
                   description:
                     "With rubric-based scoring, every vendor is evaluated against the same criteria. This reduces bias, ensures compliance, and makes your decisions more defensible.",
-                  metric: "100% consistent",
                 },
                 {
                   icon: Award,
                   title: "Scale Across Teams",
                   description:
                     "Whether you’re a small business running one RFP a year or an enterprise with hundreds of procurement cycles, Paperfly adapts to your needs. The process is scalable and repeatable, without losing flexibility.",
-                  metric: "Any scale",
                 },
               ].map((benefit, index) => (
                 <motion.div
@@ -346,11 +342,6 @@ export default function WhyAIPage() {
                 >
                   <div className="w-12 h-12 bg-[#005DF2]/10 rounded-full flex items-center justify-center mb-4">
                     <benefit.icon className="w-6 h-6 text-[#005DF2]" />
-                  </div>
-                  <div className="mb-3">
-                    <span className="text-sm font-semibold text-[#005DF2] bg-[#005DF2]/10 px-2 py-1 rounded">
-                      {benefit.metric}
-                    </span>
                   </div>
                   <h3 className="text-lg font-semibold mb-3 text-gray-900">
                     {benefit.title}
