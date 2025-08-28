@@ -125,15 +125,17 @@ export const CallToActionSection = ({
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.5 }}
                   viewport={{ once: true }}
-                  className="flex items-center space-x-4 mb-6"
+                  className="flex items-center space-x-4 "
                 >
                   <Clock className="text-white" size={24} />
                   <div>
-                    <h3 className="text-white font-bold">Draft RFPs in ~30 minutes</h3>
+                    <h3 className="text-white font-bold">
+                      Draft RFPs in ~30 minutes
+                    </h3>
                     <p className="text-white/80">From kickoff to first draft</p>
                   </div>
                 </motion.div>
-                <div className="bg-white/5 h-2 rounded-full mb-2 overflow-hidden">
+                {/* <div className="bg-white/5 h-2 rounded-full mb-2 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: "15%" }}
@@ -141,8 +143,8 @@ export const CallToActionSection = ({
                     viewport={{ once: true }}
                     className="bg-white h-2 rounded-full"
                   ></motion.div>
-                </div>
-                <motion.div
+                </div> */}
+                {/* <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: 0.7 }}
@@ -151,7 +153,7 @@ export const CallToActionSection = ({
                 >
                   <span>Paperfly: 30 min</span>
                   <span>Manual: 3+ hours</span>
-                </motion.div>
+                </motion.div> */}
               </motion.div>
             </motion.div>
           </div>
