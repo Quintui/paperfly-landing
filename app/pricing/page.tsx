@@ -20,6 +20,9 @@ import {
   Building2,
   CheckCircle,
   ArrowRight,
+  Shield,
+  Headphones,
+  Lock,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -27,7 +30,7 @@ import { DASHBOARD_URL } from "@/lib/constants";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
 import { CtaSection } from "@/components/sections/cta-section";
 
-const plan = {
+const standardPlan = {
   name: "Complete RFP/RFI Solution",
   badge: {
     text: "Everything Included",
@@ -50,6 +53,32 @@ const plan = {
   ],
   footer: {
     text: "No setup fees • No monthly subscriptions • Unlimited vendor responses",
+  },
+};
+
+const enterprisePlan = {
+  name: "Enterprise",
+  badge: {
+    text: "Custom Solution",
+    variant: "new" as const,
+  },
+  description:
+    "Tailored solutions for organizations with advanced requirements and high-volume needs.",
+  price: "Custom",
+  period: "Contact us for pricing",
+  buttonText: "Contact Us",
+  buttonVariant: "outline" as const,
+  buttonLink: DEMO_BOOKING_URL,
+  features: [
+    { name: "Everything in Complete Solution", icon: CheckCircle },
+    { name: "Custom amount of RFP/RFI projects", icon: Target },
+    { name: "Dedicated account manager", icon: Headphones },
+    { name: "Priority support & onboarding", icon: Shield },
+    { name: "Custom integrations & workflows", icon: Zap },
+    { name: "Advanced security & compliance", icon: Lock },
+  ],
+  footer: {
+    text: "Volume discounts • Custom terms • SLA agreements available",
   },
 };
 
@@ -168,8 +197,9 @@ export default function Page() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                 Simple Pricing
               </h2>
-              <div className="max-w-md mx-auto">
-                <PricingCard plan={plan} />
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <PricingCard plan={standardPlan} />
+                <PricingCard plan={enterprisePlan} />
               </div>
             </section>
 

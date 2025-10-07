@@ -15,7 +15,7 @@ interface PricingCardProps {
       variant: "new" | "popular";
     };
     description: string;
-    price: number;
+    price: number | string;
     period: string;
     features: { name: string; icon: React.ElementType }[];
     buttonText: string;
@@ -85,10 +85,18 @@ export function PricingCard({ plan }: PricingCardProps) {
             transition={{ duration: 0.3, delay: 0.3 }}
           >
             <div className="flex items-baseline">
-              <span className="text-[48px] font-semibold tracking-tight text-gray-900">
-                ${plan.price}
-              </span>
-              <span className="ml-1 text-[14px] text-gray-600">USD</span>
+              {typeof plan.price === 'number' ? (
+                <>
+                  <span className="text-[48px] font-semibold tracking-tight text-gray-900">
+                    ${plan.price}
+                  </span>
+                  <span className="ml-1 text-[14px] text-gray-600">USD</span>
+                </>
+              ) : (
+                <span className="text-[48px] font-semibold tracking-tight text-gray-900">
+                  {plan.price}
+                </span>
+              )}
             </div>
             <p className="mt-1 text-[14px] text-gray-600">{plan.period}</p>
           </motion.div>
