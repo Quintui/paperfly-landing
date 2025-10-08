@@ -57,7 +57,7 @@ const standardPlan = {
 };
 
 const enterprisePlan = {
-  name: "Enterprise",
+  name: "Enterprise Bulk",
   badge: {
     text: "Custom Solution",
     variant: "new" as const,
@@ -71,14 +71,15 @@ const enterprisePlan = {
   buttonLink: DEMO_BOOKING_URL,
   features: [
     { name: "Everything in Complete Solution", icon: CheckCircle },
-    { name: "Custom amount of RFP/RFI projects", icon: Target },
+    { name: "Volume Discounts", icon: Target },
+    { name: "Private knowledge base", icon: FileText },
     { name: "Dedicated account manager", icon: Headphones },
     { name: "Priority support & onboarding", icon: Shield },
     { name: "Custom integrations & workflows", icon: Zap },
     { name: "Advanced security & compliance", icon: Lock },
   ],
   footer: {
-    text: "Volume discounts • Custom terms • SLA agreements available",
+    text: "Volume discounts • SLA agreements available • Custom features below Contact Us",
   },
 };
 
