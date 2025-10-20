@@ -38,7 +38,7 @@ const standardPlan = {
   },
   description:
     "Professional RFP and RFI creation and vendor management in minutes.",
-  price: 299,
+  price: 1099,
   period: "per RFP/RFI project",
   buttonText: "Get Started",
   buttonVariant: "primary" as const,
