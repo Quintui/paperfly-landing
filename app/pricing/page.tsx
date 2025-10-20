@@ -28,6 +28,7 @@ import {
   MessageSquare,
   Mail,
   FileCheck,
+  UserPlus,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -54,6 +55,7 @@ const standardPlan = {
     { name: "Automated scoring & AI recommendations", icon: BarChart3 },
     { name: "Bilingual documents (English & French)", icon: Globe },
     { name: "Vendor distribution system built-in", icon: Users },
+    { name: "Team collaboration & workspace sharing", icon: UserPlus },
     { name: "Customer success consultation included", icon: CheckCircle },
   ],
   footer: {
