@@ -23,6 +23,11 @@ import {
   Shield,
   Headphones,
   Lock,
+  FormInput,
+  Link,
+  MessageSquare,
+  Mail,
+  FileCheck,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -53,6 +58,33 @@ const standardPlan = {
   ],
   footer: {
     text: "No setup fees • No monthly subscriptions • Unlimited vendor responses",
+  },
+};
+
+const formGenerationPlan = {
+  name: "Smart Form Builder",
+  // badge: {
+  //   text: "Best Value",
+  //   variant: "popular" as const,
+  // },
+  description:
+    "Transform your RFP/RFI documents into intelligent vendor evaluation forms with automated scoring.",
+  price: 899,
+  period: "per form project",
+  buttonText: "Get Started",
+  buttonVariant: "primary" as const,
+  buttonLink: DASHBOARD_URL,
+  features: [
+    { name: "Upload existing RFP/RFI documents", icon: FileText },
+    { name: "AI-generated vendor response forms", icon: FormInput },
+    { name: "Sharable vendor links for easy distribution", icon: Link },
+    { name: "Automated response evaluation & scoring", icon: BarChart3 },
+    { name: "Built-in vendor Q&A management", icon: MessageSquare },
+    { name: "Bulk accept/reject email notifications", icon: Mail },
+    { name: "Decision audit trail generation", icon: FileCheck },
+  ],
+  footer: {
+    text: "Perfect for existing RFPs/RFIs • No vendor limits • Full audit compliance",
   },
 };
 
@@ -198,7 +230,8 @@ export default function Page() {
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                 Simple Pricing
               </h2>
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <PricingCard plan={formGenerationPlan} />
                 <PricingCard plan={standardPlan} />
                 <PricingCard plan={enterprisePlan} />
               </div>
