@@ -87,6 +87,26 @@ const blogPosts = [
     ],
     featured: false,
   },
+  {
+    id: 5,
+    slug: "how-to-write-effective-research-forms-for-ai-powered-rfps",
+    title:
+      "How to Write Effective Research Forms for AI-Powered RFPs",
+    excerpt:
+      "Master the art of filling out research forms to help AI generate better RFPs. Learn how to provide context, define requirements, and communicate your project needs effectively.",
+    author: "Paperfly Team",
+    date: "January 30, 2025",
+    readTime: "8 min read",
+    category: "Best Practices",
+    tags: [
+      "Research Forms",
+      "RFP Creation",
+      "AI",
+      "Best Practices",
+      "Project Planning",
+    ],
+    featured: true,
+  },
 ];
 
 const categories = [
