@@ -1,5 +1,5 @@
 "use client";
-import { HeroSection } from "@/components/pricing/hero-section";
+import { useState } from "react";
 import { PricingCard } from "@/components/pricing/pricing-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -35,87 +35,7 @@ import { Footer } from "@/components/footer";
 import { DASHBOARD_URL } from "@/lib/constants";
 import { DEMO_BOOKING_URL } from "@/lib/constants";
 import { CtaSection } from "@/components/sections/cta-section";
-
-const standardPlan = {
-  name: "Complete RFP/RFI Solution",
-  badge: {
-    text: "Everything Included",
-    variant: "popular" as const,
-  },
-  description:
-    "Professional RFP and RFI creation and vendor management in minutes.",
-  price: 1099,
-  period: "per RFP/RFI project",
-  buttonText: "Get Started",
-  buttonVariant: "primary" as const,
-  buttonLink: DASHBOARD_URL,
-  features: [
-    { name: "2-minute RFP/RFI generation with built-in editor", icon: Clock },
-    { name: "Smart vendor response forms", icon: FileText },
-    { name: "Automated scoring & AI recommendations", icon: BarChart3 },
-    { name: "Bilingual documents (English & French)", icon: Globe },
-    { name: "Vendor distribution system built-in", icon: Users },
-    { name: "Team collaboration & workspace sharing", icon: UserPlus },
-    { name: "Customer success consultation included", icon: CheckCircle },
-  ],
-  footer: {
-    text: "No setup fees • No monthly subscriptions • Unlimited vendor responses",
-  },
-};
-
-const formGenerationPlan = {
-  name: "Smart Form Builder",
-  // badge: {
-  //   text: "Best Value",
-  //   variant: "popular" as const,
-  // },
-  description:
-    "Transform your RFP/RFI documents into intelligent vendor evaluation forms with automated scoring.",
-  price: 899,
-  period: "per form project",
-  buttonText: "Get Started",
-  buttonVariant: "primary" as const,
-  buttonLink: DASHBOARD_URL,
-  features: [
-    { name: "Upload existing RFP/RFI documents", icon: FileText },
-    { name: "AI-generated vendor response forms", icon: FormInput },
-    { name: "Sharable vendor links for easy distribution", icon: Link },
-    { name: "Automated response evaluation & scoring", icon: BarChart3 },
-    { name: "Built-in vendor Q&A management", icon: MessageSquare },
-    { name: "Bulk accept/reject email notifications", icon: Mail },
-    { name: "Decision audit trail generation", icon: FileCheck },
-  ],
-  footer: {
-    text: "Perfect for existing RFPs/RFIs • No vendor limits • Full audit compliance",
-  },
-};
-
-const enterprisePlan = {
-  name: "Enterprise Bulk",
-  badge: {
-    text: "Custom Solution",
-    variant: "new" as const,
-  },
-  description:
-    "Tailored solutions for organizations with advanced requirements and high-volume needs.",
-  price: "Custom",
-  period: "Contact us for pricing",
-  buttonText: "Contact Us",
-  buttonVariant: "outline" as const,
-  buttonLink: DEMO_BOOKING_URL,
-  features: [
-    { name: "Everything in Complete Solution", icon: CheckCircle },
-    { name: "Volume Discounts", icon: Target },
-    { name: "Private knowledge base", icon: FileText },
-    { name: "Dedicated account manager", icon: Headphones },
-    { name: "Priority support & onboarding", icon: Shield },
-    { name: "Custom integrations & workflows", icon: Zap },
-    { name: "Advanced security & compliance", icon: Lock },
-  ],
-  footer: {
-    text: "Volume discounts • SLA agreements available • Custom features below Contact Us",
-  },
-};
+import { cn } from "@/lib/utils";
 
 const howItWorks = [
   {
@@ -199,7 +119,7 @@ const faqs = [
   {
     question: "Are there any limits on vendor responses?",
     answer:
-      "No limits. Our flat $299 fee covers unlimited vendor responses, so you can reach as many potential vendors as needed.",
+      "No limits. Your subscription covers unlimited vendor responses, so you can reach as many potential vendors as needed.",
   },
   {
     question: "Can I customize evaluation criteria?",
@@ -214,27 +134,236 @@ const faqs = [
   {
     question: "Is there ongoing support included?",
     answer:
-      "Yes, customer success consultation is included with every RFP/RFI project to ensure you get the best results from our platform.",
+      "Yes, customer success consultation is included with every subscription to ensure you get the best results from our platform.",
+  },
+  {
+    question: "Can I cancel my subscription anytime?",
+    answer:
+      "Yes, you can cancel your subscription at any time. If you're on a yearly plan, you'll continue to have access until the end of your billing period.",
   },
 ];
 
 export default function Page() {
+  const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">(
+    "yearly",
+  );
+
+  const proPlanMonthly = {
+    name: "Complete RFP/RFI Solution",
+    badge: {
+      text: "Everything Included",
+      variant: "popular" as const,
+    },
+    description:
+      "Professional RFP and RFI creation and vendor management in minutes.",
+    price: 499,
+    period: "per month",
+    buttonText: "Get Started",
+    buttonVariant: "primary" as const,
+    buttonLink: DASHBOARD_URL,
+    features: [
+      {
+        name: "Unlimited RFP/RFI generation with built-in editor",
+        icon: Clock,
+      },
+      { name: "Smart vendor response forms", icon: FileText },
+      { name: "Automated scoring & AI recommendations", icon: BarChart3 },
+      { name: "Bilingual documents (English & French)", icon: Globe },
+      { name: "Vendor distribution system built-in", icon: Users },
+      { name: "Team collaboration & workspace sharing", icon: UserPlus },
+      { name: "Customer success consultation included", icon: CheckCircle },
+    ],
+    footer: {
+      text: "No setup fees • Unlimited RFP/RFI projects • Unlimited vendor responses",
+    },
+  };
+
+  const proPlanYearly = {
+    name: "Complete RFP/RFI Solution",
+    badge: {
+      text: "Save 2 months",
+      variant: "popular" as const,
+    },
+    description:
+      "Professional RFP and RFI creation and vendor management in minutes.",
+    price: 416,
+    period: "per month",
+    yearlyTotal: "Billed $4,990 yearly",
+    buttonText: "Get Started",
+    buttonVariant: "primary" as const,
+    buttonLink: DASHBOARD_URL,
+    features: [
+      {
+        name: "Unlimited RFP/RFI generation with built-in editor",
+        icon: Clock,
+      },
+      { name: "Smart vendor response forms", icon: FileText },
+      { name: "Automated scoring & AI recommendations", icon: BarChart3 },
+      { name: "Bilingual documents (English & French)", icon: Globe },
+      { name: "Vendor distribution system built-in", icon: Users },
+      { name: "Team collaboration & workspace sharing", icon: UserPlus },
+      { name: "Customer success consultation included", icon: CheckCircle },
+    ],
+    footer: {
+      text: "No setup fees • Unlimited RFP/RFI projects • Unlimited vendor responses",
+    },
+  };
+
+  const enterprisePlan = {
+    name: "Enterprise",
+    badge: {
+      text: "Custom Solution",
+      variant: "new" as const,
+    },
+    description:
+      "Tailored solutions for organizations with advanced requirements and high-volume needs.",
+    price: "Custom",
+    period: "Contact us for pricing",
+    buttonText: "Contact Us",
+    buttonVariant: "outline" as const,
+    buttonLink: DEMO_BOOKING_URL,
+    features: [
+      { name: "Everything in Complete Solution", icon: CheckCircle },
+      { name: "Volume Discounts", icon: Target },
+      { name: "Private knowledge base", icon: FileText },
+      { name: "Dedicated account manager", icon: Headphones },
+      { name: "Priority support & onboarding", icon: Shield },
+      { name: "Custom integrations & workflows", icon: Zap },
+      { name: "Advanced security & compliance", icon: Lock },
+    ],
+    footer: {
+      text: "Volume discounts • SLA agreements available • Custom features",
+    },
+  };
+
+  const currentProPlan =
+    billingPeriod === "monthly" ? proPlanMonthly : proPlanYearly;
+
   return (
     <div className="min-h-screen overflow-hidden">
       {/* Sticky Header */}
       <Header />
       <div className="pt-[72px] min-h-screen bg-white text-gray-900">
         <main className="relative">
-          {/* <HeroSection /> */}
-
           <div className="container mx-auto px-4 space-y-16 py-16">
             <section>
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                 Simple Pricing
               </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                <PricingCard plan={formGenerationPlan} />
-                <PricingCard plan={standardPlan} />
+              <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+                Choose the plan that works best for your organization
+              </p>
+
+              {/* Billing Toggle */}
+              <div className="flex justify-center mb-12">
+                <div className="inline-flex items-center bg-gray-100 rounded-full p-1">
+                  <button
+                    onClick={() => setBillingPeriod("monthly")}
+                    className={cn(
+                      "px-6 py-2 rounded-full text-sm font-medium transition-all duration-200",
+                      billingPeriod === "monthly"
+                        ? "bg-white text-gray-900 shadow-sm"
+                        : "text-gray-600 hover:text-gray-900",
+                    )}
+                  >
+                    Monthly
+                  </button>
+                  <button
+                    onClick={() => setBillingPeriod("yearly")}
+                    className={cn(
+                      "px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2",
+                      billingPeriod === "yearly"
+                        ? "bg-white text-gray-900 shadow-sm"
+                        : "text-gray-600 hover:text-gray-900",
+                    )}
+                  >
+                    Yearly
+                    <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">
+                      Save 2 months
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                {/* Pro Plan Card */}
+                <div className="relative overflow-hidden rounded-[12px] border border-gray-200 bg-white shadow-lg">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,93,242,0.02),rgba(0,93,242,0))]" />
+                  <div className="relative z-10 p-6">
+                    <div className="space-y-4">
+                      <div className="flex justify-end w-full">
+                        <span
+                          className={cn(
+                            "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold",
+                            billingPeriod === "yearly"
+                              ? "border-green-200 bg-green-50 text-green-700"
+                              : "bg-[#005DF2]/10 border-[#005DF2]/20 text-[#005DF2]",
+                          )}
+                        >
+                          {currentProPlan.badge?.text}
+                        </span>
+                      </div>
+
+                      <div className="mt-8">
+                        <h3 className="text-[24px] font-semibold tracking-tight text-gray-900">
+                          {currentProPlan.name}
+                        </h3>
+                        <p className="mt-2 text-[14px] leading-relaxed text-gray-600">
+                          {currentProPlan.description}
+                        </p>
+                      </div>
+
+                      <div className="pt-4">
+                        <div className="flex items-baseline">
+                          <span className="text-[48px] font-semibold tracking-tight text-gray-900">
+                            ${currentProPlan.price}
+                          </span>
+                          <span className="ml-1 text-[14px] text-gray-600">
+                            USD
+                          </span>
+                        </div>
+                        <p className="mt-1 text-[14px] text-gray-600">
+                          {currentProPlan.period}
+                        </p>
+                        {billingPeriod === "yearly" && (
+                          <p className="mt-1 text-[14px] font-medium text-[#005DF2]">
+                            Billed $4,990 yearly
+                          </p>
+                        )}
+                      </div>
+
+                      <ul className="space-y-3 py-4">
+                        {currentProPlan.features.map((feature, index) => (
+                          <li key={index} className="flex items-center">
+                            <feature.icon className="w-5 h-5 mr-3 text-[#005DF2]" />
+                            <span className="text-[14px] text-gray-700">
+                              {feature.name}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div>
+                        <a
+                          href={currentProPlan.buttonLink}
+                          className={cn(
+                            buttonVariants({ variant: "default" }),
+                            "w-full transition-all duration-200 bg-[#005DF2] text-white hover:bg-[#0052d4]",
+                          )}
+                        >
+                          {currentProPlan.buttonText}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative z-10 px-6 py-4 border-t border-gray-100">
+                    <p className="text-[14px] text-gray-600">
+                      {currentProPlan.footer?.text}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Enterprise Card */}
                 <PricingCard plan={enterprisePlan} />
               </div>
             </section>
@@ -328,38 +457,6 @@ export default function Page() {
             </section>
 
             <CtaSection />
-            {/*             <section className="text-center bg-gray-50 rounded-3xl p-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Transform Your RFP/RFI Process in Minutes
-              </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-                Join organizations worldwide who have streamlined their vendor
-                selection process with our AI-powered solution.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="bg-[#005DF2] text-white hover:bg-[#0052d4]"
-                  asChild
-                >
-                  <a href={DASHBOARD_URL}>
-                    Get Started
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
-                <a
-                  href={DEMO_BOOKING_URL}
-                  className={buttonVariants({
-                    size: "lg",
-                    variant: "outline",
-                    className:
-                      "border-gray-300 text-gray-900 hover:bg-gray-100 bg-white",
-                  })}
-                >
-                  Book a Demo
-                </a>
-              </div>
-            </section> */}
           </div>
         </main>
 
